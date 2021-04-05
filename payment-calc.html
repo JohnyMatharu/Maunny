@@ -33,57 +33,53 @@
         <div class = "card m-5 bg-secondary">
             <h3><span></span></h3>
 
-            <form class = "m-5 bg-white py-3">
+            <form class = "m-5 bg-white py-3" id = "my-form">
                 
                 <div class="form-group align-items-center d-flex justify-content-center">
                     <div class="col-auto my-1 d-flex">
-                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Vehicle Price ($): </label>
-                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                        <label class="mr-sm-2 m-auto w-100" for="v-price">Vehicle Price ($): </label>
+                        <input type="text" class="form-control m-auto" id="v-price">
                       </div>
                 </div>
                 <div class="form-group align-items-center d-flex justify-content-center">
                     <div class="col-auto my-1 d-flex">
-                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Down Payment ($): </label>
-                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                        <label class="mr-sm-2 m-auto w-100" for="v-down">Down Payment ($): </label>
+                        <input type="text" class="form-control m-auto" id="v-down">
                       </div>
                 </div>
                 <div class="form-group align-items-center d-flex justify-content-center">
                     <div class="col-auto my-1 d-flex">
-                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Interest Rate (%): </label>
-                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                        <label class="mr-sm-2 m-auto w-100" for="v-interest">Interest Rate (%): </label>
+                        <input type="text" class="form-control m-auto" id="v-interest">
                       </div>
-                </div>
-
-                <div class="form-row align-items-center d-flex justify-content-center">
-                  <div class="col-auto my-1 d-flex">
-                    <label class="mr-sm-2 m-auto" for="inlineFormCustomSelect">asdasdsaasdsad</label>
-                    <select class="custom-select mr-sm-2 m-auto" id="inlineFormCustomSelect">
-                      <option selected>Choose...</option>
-                      <option value="1"></option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  
-                 
-
                 </div>
                 <div class="form-row align-items-center d-flex justify-content-center">
                     <div class="col-auto my-1 d-flex w-50">
-                        <label class="mr-sm-2 m-auto w-100" for="inlineFormCustomSelect">Chose payment interval</label>
-                      <select class="custom-select mr-sm-2 m-auto " id="inlineFormCustomSelect">
+                        <label class="mr-sm-2 m-auto w-100" for="v-length">Chose payment interval</label>
+                        <select class="custom-select mr-sm-2 m-auto " id="v-length">
                         
-                        <option value="1">Weekly</option>
-                        <option value="2">Bi-Monthly</option>
-                        <option value="3">Monthly</option>
-                      </select>
-                    </div>
-                    
-                    
-                  </div>
-                  <div class="col-auto my-1">
+                            <option value="1">36</option>
+                            <option value="2">48</option>
+                            <option value="3">60</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="form-row align-items-center d-flex justify-content-center">
+                    <div class="col-auto my-1 d-flex w-50">
+                        <label class="mr-sm-2 m-auto w-100" for="v-interval">Chose payment interval</label>
+                        <select class="custom-select mr-sm-2 m-auto " id="v-interval">
+                        
+                            <option value="1">Weekly</option>
+                            <option value="2">Bi-Monthly</option>
+                            <option value="3">Monthly</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="col-auto my-1 d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
+                </div>
+                <h3 class= "d-flex justify-content-center" >Your payment is: <span id = "paymentValue"></span></h3>
+            </div>
               </form>
 
         </div>
