@@ -1,5 +1,5 @@
 var displayPayment =function(price, string){
-    $("#paymentValue").html(" $"+price+" "+string);
+    $("#paymentValue").html("Your payment is: $"+price+string);
     //var priceDivEl = $("<div>").addClass("priceDiv d-flex justify-content-center");
    // $(priceDivEl).append(priceTextEl);
    // $("#my-form").append(priceDivEl);
@@ -14,14 +14,14 @@ var calculatePayment = function(price, down, interest, interval, length){
         if (interval ==1){
             //divide by 48
             tempInterest = interest/48;
-            intervalString = "per week";
+            intervalString = " per week";
         } else if (interval ==2){
             tempInterest = interest/24;
-            intervalString = "per 2 weeks";
+            intervalString = " per 2 weeks";
         } else if (interval ==3){
             //divide by 12
             tempInterest = interest/12;
-            intervalString = "per month";};
+            intervalString = " per month";};
             
         if (length ==1){
             numOfPayments = 36;
