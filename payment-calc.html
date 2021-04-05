@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Vehicle Price, textarea-->
+    <!--Down Payment, textarea-->
+    <!--Sales Tax, textarea-->
+    <!--interest Rate, textarea-->
+    <!--Loan Term, Dropdown selectable-->
+    <!--Payment Frequency, Dropdown selectable-->
+    <div>
+        <div class = "card m-5 bg-secondary">
+            <h3><span></span></h3>
+
+            <form class = "m-5 bg-white py-3">
+                
+                <div class="form-group align-items-center d-flex justify-content-center">
+                    <div class="col-auto my-1 d-flex">
+                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Vehicle Price ($): </label>
+                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                      </div>
+                </div>
+                <div class="form-group align-items-center d-flex justify-content-center">
+                    <div class="col-auto my-1 d-flex">
+                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Down Payment ($): </label>
+                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                      </div>
+                </div>
+                <div class="form-group align-items-center d-flex justify-content-center">
+                    <div class="col-auto my-1 d-flex">
+                        <label class="mr-sm-2 m-auto w-100" for="formGroupExampleInput">Interest Rate (%): </label>
+                        <input type="text" class="form-control m-auto" id="formGroupExampleInput">
+                      </div>
+                </div>
+
+                <div class="form-row align-items-center d-flex justify-content-center">
+                  <div class="col-auto my-1 d-flex">
+                    <label class="mr-sm-2 m-auto" for="inlineFormCustomSelect">asdasdsaasdsad</label>
+                    <select class="custom-select mr-sm-2 m-auto" id="inlineFormCustomSelect">
+                      <option selected>Choose...</option>
+                      <option value="1"></option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  
+                 
+
+                </div>
+                <div class="form-row align-items-center d-flex justify-content-center">
+                    <div class="col-auto my-1 d-flex w-50">
+                        <label class="mr-sm-2 m-auto w-100" for="inlineFormCustomSelect">Chose payment interval</label>
+                      <select class="custom-select mr-sm-2 m-auto " id="inlineFormCustomSelect">
+                        
+                        <option value="1">Weekly</option>
+                        <option value="2">Bi-Monthly</option>
+                        <option value="3">Monthly</option>
+                      </select>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+              </form>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+</body>
+</html>
