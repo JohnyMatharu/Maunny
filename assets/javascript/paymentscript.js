@@ -10,7 +10,7 @@ var calculatePayment = function(price, down, interest, interval, length){
     var numOfPayments;
     var tempInterest;
     var intervalString;
- 
+    //jQuery.noConflict();
     if (!isNaN(price)&&!isNaN(down)&&!isNaN(interest)){
         if(price>=8000){
             if (interval ==1){
@@ -23,8 +23,8 @@ var calculatePayment = function(price, down, interest, interval, length){
             console.log(intervalString);
             tempInterest = interest/(length*interval);
             numOfPayments = interval*length;
-        } else {alert("We do not sell cars under $8000");return;}
-    } else {alert("Inputs MUST be numerical"); return;}
+        } else {$("#modalPriceCheck").modal("show"); return;}
+    } else {$("#modalInputCheck").modal("show"); return;}
     
     tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
     displayPayment(tempPrice.toFixed(2), intervalString);
@@ -36,8 +36,13 @@ $("#my-form").on("click",".btn", function(event){
     var vInterest = $("#v-interest").val();
     var vInterval = $("#v-interval").val();
     var vLength = $("#v-length").val();
-
+    
     calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);  
     
 });
 
+$(".modalCloseBtn").click( 
+    function(event){
+        $(".modal").modal("hide");
+    }
+);
