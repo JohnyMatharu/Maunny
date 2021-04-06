@@ -10,31 +10,39 @@ var calculatePayment = function(price, down, interest, interval, length){
     var numOfPayments;
     var tempInterest;
     var intervalString;
+    var frequency
     if (!isNaN(price)&&!isNaN(down)&&!isNaN(interest)){
-        if (interval ==1){
-            //divide by 48
-            tempInterest = interest/48;
-            intervalString = " per week";
+        console.log(interval);
+         if (interval ==1){
+            intervalString = " per month";
         } else if (interval ==2){
-            tempInterest = interest/24;
-            intervalString = " per 2 weeks";
-        } else if (interval ==3){
-            //divide by 12
-            tempInterest = interest/12;
-            intervalString = " per month";};
-            
-        if (length ==1){
-            numOfPayments = 36;
-        } else if (length ==2){
-            numOfPayments = 48;
-        } else if (length ==3){
-            numOfPayments = 60;};
-    }
-    else {alert("Inputs MUST be numerical"); return;}
+            intervalString = " bi-monthly";
+        } else if (interval ==4){
+            intervalString = " per week";};
+            //divide by 48
+        console.log(intervalString);
+        tempInterest = interest/(length*interval);
+        //    intervalString = " per week";
         
-    tempPrice =(tempPrice*((tempInterest*(1+tempInterest)*numOfPayments))/(((1+tempInterest)*numOfPayments)-1)).toFixed(2);
-    console.log(tempPrice);
-    displayPayment(tempPrice, intervalString);
+        //    tempInterest = interest/24;
+        //    intervalString = " per 2 weeks";
+        //} else if (interval ==4){
+            //divide by 12
+        //    tempInterest = interest/12;
+        //    intervalString = " per month";};
+            
+        //if (length ==36){
+        //    numOfPayments = length*4;
+        //} else if (length ==48){
+        //    numOfPayments = length*2;
+        //} else if (length ==60){
+        //    numOfPayments = length;};
+        numOfPayments = interval*length;
+    } else {alert("Inputs MUST be numerical"); return;}
+    console.log(tempInterest);
+    
+    tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
+    displayPayment(tempPrice.toFixed(2), intervalString);
 }
 $("#my-form").on("click",".btn", function(event){
     event.preventDefault();
