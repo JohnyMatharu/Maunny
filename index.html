@@ -48,93 +48,88 @@
     </nav>
 </header>
 <section class= "container">
-  <div class = "heading"><h1>Vehicle Search Inquiry</h1></div>
+  <div class = "heading  "><h1 class="d-flex justify-content-center ">Vehicle Search Inquiry</h1></div>
   <br>
   <br>
-  <div class = "flexContainer">
+  <div class = "row inquiryDiv d-flex justify-content-center">
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-   <div class = "inquiry">
+   <div class = "inquiry col-3">
      <!-- this is left div beg -->
-    <br>
-    <br>
-    <br>
-    <form>
-    <label for="cars">Year:</label>
-    <select id="year">
-      <option value="2006">2006</option>
-      <option value="2007">2007</option>
-      <option value="2008">2008</option>
-      <option value="2009">2009</option>
-      <option value="2010">2010</option>
-      <option value="2011">2011</option>
-      <option value="2012">2012</option>
-      <option value="2013">2013</option>
-      <option value="2014">2014</option>
-      <option value="2015">2015</option>
-      <option value="2016">2016</option>
-      <option value="2017">2017</option>
-      <option value="2018">2018</option>
-      <option value="2019">2019</option>
-      <option value="2020">2020</option>
-      <option value="2021">2021</option>
-      <option value="YYYY" selected>YYYY</option>
-   </select>
-  <br>
-  <br>
-  <label for="cars">Make:</label>
-  <select id="make">
-    <option value="GM">GM</option>
-    <option value="Ford">Ford</option>
-    <option value="Chrysler">Chrysler</option>
-    <option value="Toyota">Toyota</option>
-    <option value="Lexus">Kia</option>
-    <option value="Nissan">Nissan</option>
-    <option value="Mitsibuishi">Mitsibuishi</option>
-    <option value="Honda">Honda</option>
-    <option value="Mazda">Mazda</option>
-    <option value="Kia">Kia</option>
-    <option value="Hyundai">Hyundai</option>
-    <option value="Subaru">Subaru</option>
-    <option value="Chevrolet">Chevrolet</option>
-    <option value="Mercedes">Mercedes</option>
-    <option value="BMW">BMW</option>
-    <option value="Volkswagen">Volkswagen</option>
-    <option value="Porsche">Porsche</option>
-    <option value="Acura">Acura</option>
-    <option value="Dodge">Dodge</option>
-    <option value="Jeep">Jeep</option>
-    <option value="YYYY" selected>----</option>
-  </select>
+    <form class ="">
+      <label for="cars">Year:</label>
+      <select id="year" class="custom-select m-auto ">
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="YYYY" selected>YYYY</option>
+      </select>
+      <br>
+      <br>
+      <label for="cars">Make:</label>
+      <select id="make" class="custom-select m-auto ">
+        <option value="GM">GM</option>
+        <option value="Ford">Ford</option>
+        <option value="Chrysler">Chrysler</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Lexus">Kia</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Mitsibuishi">Mitsibuishi</option>
+        <option value="Honda">Honda</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Kia">Kia</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="BMW">BMW</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Acura">Acura</option>
+        <option value="Dodge">Dodge</option>
+        <option value="Jeep">Jeep</option>
+        <option value="YYYY" selected>----</option>
+      </select>
 <!-- you can use getelementbyID and attach models when users click on make, as event listener, list can populate for that make for models-->
-  <br>
-  <br>
-  <label for="cars">Mileage in km:</label>
-  <select id="Mileage">
-    <option value="50">0 to 50,000 km</option>
-    <option value="100">50,000 to 1,00,000 km</option>
-    <option value="150">1,00,000 to 1,50,000 km</option>
-    <option value="200">1,50,000 to 2,00,000 km</option>
-    <option value="250">2,00,000 to 2,50,000 km</option>
-  </select>
-  <br>
-  <br>
-  <button id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
-  </form>
+      <br>
+      <br>
+      <label for="cars">Mileage in km:</label>
+      <select id="Mileage" class="custom-select m-auto ">
+        <option value="50">0 to 50,000 km</option>
+        <option value="100">50,000 to 1,00,000 km</option>
+        <option value="150">1,00,000 to 1,50,000 km</option>
+        <option value="200">1,50,000 to 2,00,000 km</option>
+        <option value="250">2,00,000 to 2,50,000 km</option>
+      </select>
+      <br>
+      <br>
+      <button id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
+    </form>
   </div>
   <!-- this is end of left div -->
 
 
 <!-- <div class = "carInfo"> -->
 
-  <div class = "carPictures">
+  <div class = "carPictures col-6 d-flex">
     <!-- this is right div of container div  -->
-    <div class = "imageDisplay">
-      <img id = "carDisplay"/> 
+    <div class = "imageDisplay d-flex w-100">
+      <img id = "carDisplay w-100"/> 
     <!-- insert place holder div -->
     </div>
-
-    <div id = "stockDisplay">
-
+    <div id = "stockDisplay" class = " d-flex w-100">
     <!-- this is for stock number use in js to display stock, may have to use flex box #, make sure bottom margin of page fits -->
     </div>
 <!-- this is end of car Pictures div -->
@@ -145,28 +140,32 @@
 
 </div>
 <!-- this is parent boundary div for both left and right div ending i.e. flex container-->
-<br>
-<br>
-<br>
-<br>
 
-<div class = "">
+
+<div>
   <form class = "interest">
+    
+    <label for="customer" class="w-100"><h4 class =" d-flex justify-content-center">Select vehicle</h4></label>
     <br>
-    <br>
-    <br>
-    <label for="customer"><h4>Select vehicle</h4></label>
-    <br>
-    <label for="customer">Stock number</label>
-    <input type = "text"></input>
-    <label for="customer">Your name</label>
-    <input type = "text"></input>
-    <label for="customer">Phone and/or email</label>
-    <input type = "text"></input>
-    <br>
-    <br>
-    <br>
-    <button type="submit" name="submit" value="submit">Submit</button>
+    <div class="form-row align-items-center d-flex justify-content-center">
+      <div class="col-auto my-1 px-3 d-flex w-100">
+      <label for="customer" class="m-auto w-100">Stock number</label>
+      <input type = "text" class="form-control m-auto"></input>
+      </div>
+    </div>
+    <div class="form-row align-items-center d-flex justify-content-center">
+      <div class="col-auto my-1 px-3 d-flex w-100">
+        <label for="customer" class="m-auto w-100">Your name</label>
+        <input type = "text" class="form-control m-auto"></input>
+      </div>
+    </div>
+    <div class="form-row align-items-center d-flex justify-content-center">
+      <div class="col-auto my-1 px-3 d-flex w-100">
+        <label class="m-auto w-100" for="customer">Phone and/or email</label>
+        <input type = "text" class="form-control m-auto"></input>
+      </div>
+    </div>
+    <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
     <br>
     <br>
     <br>
@@ -178,7 +177,7 @@
 
   <section class = "container">
     <div >
-        <div class = "heading"><h1>Payment Calculator</h1></div>
+        <div class = "heading "><h1 class="d-flex justify-content-center">Payment Calculator</h1></div>
 
         <form class = "" id = "my-form">
             
