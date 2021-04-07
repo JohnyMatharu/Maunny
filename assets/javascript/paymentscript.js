@@ -1,8 +1,8 @@
 var displayPayment =function(price, string){
-    $("#paymentValue").html("Your payment is: $"+price+string);
-    //var priceDivEl = $("<div>").addClass("priceDiv d-flex justify-content-center");
-   // $(priceDivEl).append(priceTextEl);
-   // $("#my-form").append(priceDivEl);
+    var totalPrice = (price+600)*1.13;
+    $("#paymentValue").html("Your payment is: $"+totalPrice.toFixed(2)+string);
+    $("#feeTaxes").html(" incl. taxes and $600 administration, licensing, and fuel cost");
+    //taxes + 600 admin, fuel, licensing fee
 }
 
 var calculatePayment = function(price, down, interest, interval, length){
@@ -10,36 +10,21 @@ var calculatePayment = function(price, down, interest, interval, length){
     var numOfPayments;
     var tempInterest;
     var intervalString;
-    var frequency
+    //jQuery.noConflict();
     if (!isNaN(price)&&!isNaN(down)&&!isNaN(interest)){
-        console.log(interval);
-         if (interval ==1){
-            intervalString = " per month";
-        } else if (interval ==2){
-            intervalString = " bi-monthly";
-        } else if (interval ==4){
-            intervalString = " per week";};
-            //divide by 48
-        console.log(intervalString);
-        tempInterest = interest/(length*interval);
-        //    intervalString = " per week";
-        
-        //    tempInterest = interest/24;
-        //    intervalString = " per 2 weeks";
-        //} else if (interval ==4){
-            //divide by 12
-        //    tempInterest = interest/12;
-        //    intervalString = " per month";};
-            
-        //if (length ==36){
-        //    numOfPayments = length*4;
-        //} else if (length ==48){
-        //    numOfPayments = length*2;
-        //} else if (length ==60){
-        //    numOfPayments = length;};
-        numOfPayments = interval*length;
-    } else {alert("Inputs MUST be numerical"); return;}
-    console.log(tempInterest);
+        if(price>=8000){
+            if (interval ==1){
+                intervalString = " per month";
+            } else if (interval ==2){
+                intervalString = " bi-monthly";
+            } else if (interval ==4){
+                intervalString = " per week";};
+                //divide by 48
+            console.log(intervalString);
+            tempInterest = interest/(length*interval);
+            numOfPayments = interval*length;
+        } else {$("#modalPriceCheck").modal("show"); return;}
+    } else {$("#modalInputCheck").modal("show"); return;}
     
     tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
     displayPayment(tempPrice.toFixed(2), intervalString);
@@ -51,6 +36,13 @@ $("#my-form").on("click",".btn", function(event){
     var vInterest = $("#v-interest").val();
     var vInterval = $("#v-interval").val();
     var vLength = $("#v-length").val();
-    calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);
+    
+    calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);  
+    
 });
 
+$(".modalCloseBtn").click( 
+    function(event){
+        $(".modal").modal("hide");
+    }
+);
