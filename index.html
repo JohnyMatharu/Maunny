@@ -107,31 +107,37 @@
   </select>
   <br>
   <br>
-  <button type="submit" name="submit" value="submit">Submit</button>
+  <button id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
 </form>
   </div>
   <!-- this is end of left div -->
 
 
+<!-- <div class = "carInfo"> -->
 
   <div class = "carPictures">
-    <!-- insert place holder -->
+    <!-- this is right div of container div  -->
+<div class = "imageDisplay">
+    <img id = carDisplay/> 
+    <!-- insert place holder div -->
+</div>
 
-    <!-- <img src="http://goo.gl/ijai22"/> -->
-    <img src="./assets/images/car-pictures/chevrolet.equinox.png"/>
-  </div>
-<!-- this is the picture div -->
-  <div class = "stockDisplay">
+  <div id = "stockDisplay">
 
     <!-- this is for stock number use in js to display stock, may have to use flex box #, make sure bottom margin of page fits -->
   </div>
-
+<!-- this is end of car Pictures div -->
+</div>
 
 
 
 
 </div>
-<!-- this is parent boundary div for both left and right div ending -->
+<!-- this is parent boundary div for both left and right div ending i.e. flex container-->
+<br>
+<br>
+<br>
+<br>
 
 <div class = "interest">
 <form class = "interest">
@@ -152,11 +158,12 @@
 <button type="submit" name="submit" value="submit">Submit</button>
 <br>
 <br>
+<br>
 </form>
 </div>
 </section>
 
-  
+<script src="./assets/javascript/js.js"></script>
 </body>
 </html>
 
