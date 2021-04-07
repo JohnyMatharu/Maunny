@@ -99,16 +99,18 @@ var calculatePayment = function(price, down, interest, interval, length){
     //jQuery.noConflict();
     if (!isNaN(price)&&!isNaN(down)&&!isNaN(interest)){
         if(price>=8000){
-            if (interval ==1){
-                intervalString = " per month";
-            } else if (interval ==2){
-                intervalString = " bi-monthly";
-            } else if (interval ==4){
-                intervalString = " per week";};
-                //divide by 48
-            console.log(intervalString);
-            tempInterest = interest/(length*interval);
-            numOfPayments = interval*length;
+            if(tempPrice>0){
+                if (interval ==1){
+                    intervalString = " per month";
+                } else if (interval ==2){
+                    intervalString = " bi-monthly";
+                } else if (interval ==4){
+                    intervalString = " per week";};
+                    //divide by 48
+                tempInterest = interest/(length*interval);
+                numOfPayments = interval*length;
+            } else{$("#modalNegCheck").modal("show"); return; }
+           
         } else {$("#modalPriceCheck").modal("show"); return;}
     } else {$("#modalInputCheck").modal("show"); return;}
     
