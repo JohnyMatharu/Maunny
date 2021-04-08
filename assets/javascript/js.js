@@ -54,7 +54,7 @@ toyotacamry: { picture : "./assets/images/car-pictures/toyota-camry.png",
 stockNo: "stNotca"},
 toyotacorolla: { picture : "./assets/images/car-pictures/toyota-corolla.jpeg",
 stockNo: "stNotc"},
-toyotafortuner: { picture : "./assets/images/car-pictures/toyota-fortuner.jpeg",
+toyotafortuner: { picture : "./assets/images/car-pictures/toyota-corolla.jpeg",
 stockNo: "stNotf"}
 
 };
@@ -65,10 +65,10 @@ document.getElementById("submitBtn").addEventListener("click", displayPicture);
 document.getElementById("submitBtn").addEventListener("click", stockNumber);
  
 // this is to display the picture on click 
-function displayPicture(event) 
- {
+function displayPicture(event) {
     event.preventDefault();
-document.getElementById("carDisplay").src = imgArr.dodgeram.picture;
+//document.getElementById("carDisplay").src = imgArr.dodgeram.picture;
+$("#carDisplay").attr("src", imgArr.toyotafortuner.picture);
 
 };
  
