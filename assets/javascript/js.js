@@ -1,4 +1,62 @@
 var imgArr = {
+
+    // new list in alphabetical order
+
+    acuramdx:{ picture : "./assets/images/car-pictures/acura-mdx.jpeg",
+    stockNo: "stNoam"},
+    acurardx:{ picture : "./assets/images/car-pictures/acura-rdx.webp",
+    stockNo: "stNoar"},
+    acuratlx:{ picture : "./assets/images/car-pictures/acura-tlx.jpeg",
+    stockNo: "stNoat"},
+    bmw3series:{ picture : "./assets/images/car-pictures/bmw-3series.jpeg.jpeg",
+    stockNo: "stNob3"},
+    bmw5series:{ picture : "./assets/images/car-pictures/bmw-5series.jpeg",
+    stockNo: "stNob5"},
+    bmwx5:{ picture : "./assets/images/car-pictures/bmw-x5.jpeg",
+    stockNo: "stNobx"},
+    chevroletcamaro:{ picture : "./assets/images/car-pictures/chevrolet-camaro.jpeg",
+    stockNo: "stNocc"}, 
+    chevroletcorvette:{ picture : "./assets/images/car-pictures/chevrolet-corvette.jpeg",
+    stockNo: "stNocc"},
+    chevroletsuburban:{ picture : "./assets/images/car-pictures/chevrolet-suburban.jpeg",
+    stockNo: "stNocs"},
+    fordmustang:{ picture : "./assets/images/car-pictures/ford-mustang.jpeg",
+    stockNo: "stNofm"},
+    hyundaisantafe:{ picture : "./assets/images/car-pictures/hyundai-santafe.jpeg",
+    stockNo: "stNohs"},
+    jeepwrangler:{ picture : "./assets/images/car-pictures/jeep-wrangler.jpeg",
+    stockNo: "stNojw"},
+    lincolnmark:{ picture : "./assets/images/car-pictures/lincoln-mark.jpeg",
+    stockNo: "stNolm"},
+    mazda3:{ picture : "./assets/images/car-pictures/mazda-3.jpeg",
+    stockNo: "stNom3"},
+    mercedescclass:{ picture : "./assets/images/car-pictures/mercedes-cclass.jpeg",
+    stockNo: "stNomc"},
+    mercedeseclass:{ picture : "./assets/images/car-pictures/mercedes-eclass.png",
+    stockNo: "stNome"},
+    mercedesglc:{ picture : "./assets/images/car-pictures/mercedes-glc.jpeg",
+    stockNo: "stNomglc"},
+    mercedesgle:{ picture : "./assets/images/car-pictures/mercedes-gle.jpeg",
+    stockNo: "stNomg"},
+    porschecarrera911:{ picture : "./assets/images/car-pictures/porsche-carrera911.jpeg",
+    stockNo: "stNopc9"},
+    porschecayenne:{ picture : "./assets/images/car-pictures/porsche-cayenne.jpeg",
+    stockNo: "stNopc"},
+    porschepanamera:{ picture : "./assets/images/car-pictures/porsche-panamera.jpeg",
+    stockNo: "stNopp"},
+    subarulegacy:{ picture : "./assets/images/car-pictures/subaru-legacy.jpeg",
+    stockNo: "stNosl"},
+    subaruwrx:{ picture : "./assets/images/car-pictures/subaru-wrx.jpeg",
+    stockNo: "stNosw"},
+    volkswagenatlas:{ picture : "./assets/images/car-pictures/volkswagen-atlas.jpeg",
+    stockNo: "stNova"},
+    volkswagengolf:{ picture : "./assets/images/car-pictures/volkswagen-golf.jpeg",
+    stockNo: "stNovg"},
+    volkswagentiguan:{ picture : "./assets/images/car-pictures/volkswagen-tiguan.jpeg",
+    stockNo: "stNovt"},
+
+// Anything below this is old and alphabetical order
+
     chrysler300:{ picture : "./assets/images/car-pictures/Chrysler-300.jpeg",
     stockNo: "stNoc3"},
     chevroletequinox:{ picture : "./assets/images/car-pictures/chevrolet.equinox.png",
@@ -27,9 +85,6 @@ var imgArr = {
     stockNo: "stNoli"},
     lexusrx: { picture : "./assets/images/car-pictures/lexus-rx.png",
     stockNo: "stNolr"},
-    // { picture : "./assets/images/car-pictures/mazda-3
-    // ",
-    //stockNo: "stNo"}
     mazda6: { picture : "./assets/images/car-pictures/mazda-6.jpeg",
     stockNo: "stNom6"},
     mazdacx5: { picture : "./assets/images/car-pictures/mazda-cx5.webp",
@@ -58,8 +113,7 @@ var imgArr = {
     stockNo: "stNotf"}
     
     };
-    
-    
+        
     
     document.getElementById("submitBtn").addEventListener("click", displayPicture);
     document.getElementById("submitBtn").addEventListener("click", stockNumber);
@@ -68,7 +122,7 @@ var imgArr = {
     function displayPicture(event) 
      {
         event.preventDefault();
-    document.getElementById("carDisplay").src = imgArr.toyotafortuner.picture;
+    document.getElementById("carDisplay").src = imgArr.hyundaisantafe.picture;
     
     };
      
@@ -77,7 +131,7 @@ var imgArr = {
     function stockNumber(event)
     {
         event.preventDefault();
-     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.toyotafortuner.stockNo;
+     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.hyundaisantafe.stockNo;
       
      };
     
