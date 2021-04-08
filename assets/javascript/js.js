@@ -4,7 +4,7 @@ var imgArr = {
 
     acuramdx:{ picture : "./assets/images/car-pictures/acura-mdx.jpeg",
     stockNo: "stNoam"},
-    acurardx:{ picture : "./assets/images/car-pictures/acura-rdx.webp",
+    acurardx:{ picture : "./assets/images/car-pictures/acura-rdx.jpeg",
     stockNo: "stNoar"},
     acuratlx:{ picture : "./assets/images/car-pictures/acura-tlx.jpeg",
     stockNo: "stNoat"},
@@ -22,6 +22,19 @@ var imgArr = {
     stockNo: "stNocs"},
     fordmustang:{ picture : "./assets/images/car-pictures/ford-mustang.jpeg",
     stockNo: "stNofm"},
+    fordf150:{ picture : "./assets/images/car-pictures/ford-f150.jpeg",
+    stockNo: "stNoff1"},
+
+    
+    gmcsierra:{ picture : "./assets/images/car-pictures/gmc-sierra.jpeg",
+    stockNo: "stNogs"},
+    gmcterrain:{ picture : "./assets/images/car-pictures/gmc-terrain.jpeg",
+    stockNo: "stNogt"},
+    gmcacadia:{ picture : "./assets/images/car-pictures/gmc-acadia.jpeg",
+    stockNo: "stNoga"},
+
+
+
     hyundaisantafe:{ picture : "./assets/images/car-pictures/hyundai-santafe.jpeg",
     stockNo: "stNohs"},
     jeepwrangler:{ picture : "./assets/images/car-pictures/jeep-wrangler.jpeg",
@@ -54,6 +67,16 @@ var imgArr = {
     stockNo: "stNovg"},
     volkswagentiguan:{ picture : "./assets/images/car-pictures/volkswagen-tiguan.jpeg",
     stockNo: "stNovt"},
+    volkswagenjetta:{ picture : "./assets/images/car-pictures/volkswagen-jetta.jpeg",
+    stockNo: "stNovj"},
+
+
+
+    dodgechallenger: { picture : "./assets/images/car-pictures/dodge-challenger.jpeg",
+    stockNo: "stNodc"},
+    dodgecharger: { picture : "./assets/images/car-pictures/dodge-charger.jpeg",
+    stockNo: "stNodchar"},
+
 
 // Anything below this is old and alphabetical order
 
@@ -87,8 +110,6 @@ var imgArr = {
     stockNo: "stNolr"},
     mazda6: { picture : "./assets/images/car-pictures/mazda-6.jpeg",
     stockNo: "stNom6"},
-    mazdacx5: { picture : "./assets/images/car-pictures/mazda-cx5.webp",
-    stockNo: "stNomc"},
     mitsubishieclipse: { picture : "./assets/images/car-pictures/mitsubishi-eclipse.jpeg",
     stockNo: "stNome"},
     mitsubishimirage: { picture : "./assets/images/car-pictures/mitsubishi-mirage.png",
@@ -122,7 +143,7 @@ var imgArr = {
     function displayPicture(event) 
      {
         event.preventDefault();
-    document.getElementById("carDisplay").src = imgArr.hyundaisantafe.picture;
+    document.getElementById("carDisplay").src = imgArr.volkswagenjetta.picture;
     
     };
      
@@ -131,7 +152,7 @@ var imgArr = {
     function stockNumber(event)
     {
         event.preventDefault();
-     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.hyundaisantafe.stockNo;
+     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
       
      };
     
