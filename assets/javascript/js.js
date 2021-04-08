@@ -117,7 +117,22 @@ var calculatePayment = function(price, down, interest, interval, length){
     tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
     displayPayment(tempPrice.toFixed(2), intervalString);
 }
-$("#my-form").on("click",".btn", function(event){
+
+$(".search").on("click",".btn", function(event){
+    event.preventDefault();
+    var carYear = $("#year").val();
+    var carMake = $("#make").val();
+    var carMileage = $("#mileage").val();
+
+});
+$(".interest").on("click",".btn", function(event){
+    event.preventDefault();
+    var stockNumber = $("#stockNumber").val();
+    var yourName = $("#yourName").val();
+    var yourPhoneEmail = $("#yourPhoneEmail").val();
+    if (stockNumber.isNaN){$("#modalInputCheck").modal("show"); return;}
+});
+$(".payment").on("click",".btn", function(event){
     event.preventDefault();
     var vPrice = $("#v-price").val();
     var vDown = $("#v-down").val();

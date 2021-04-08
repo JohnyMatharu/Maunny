@@ -55,7 +55,7 @@
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
    <div class = "inquiry col-3">
      <!-- this is left div beg -->
-    <form class ="">
+    <form class ="search">
       <label for="cars">Year:</label>
       <select id="year" class="custom-select m-auto ">
         <option value="2006">2006</option>
@@ -106,7 +106,7 @@
       <br>
       <br>
       <label for="cars">Mileage in km:</label>
-      <select id="Mileage" class="custom-select m-auto ">
+      <select id="mileage" class="custom-select m-auto ">
         <option value="50">0 to 50,000 km</option>
         <option value="100">50,000 to 1,00,000 km</option>
         <option value="150">1,00,000 to 1,50,000 km</option>
@@ -150,19 +150,19 @@
     <div class="form-row align-items-center d-flex justify-content-center">
       <div class="col-auto my-1 px-3 d-flex w-100">
       <label for="customer" class="m-auto w-100">Stock number</label>
-      <input type = "text" class="form-control m-auto"></input>
+      <input type = "text" class="form-control m-auto" id = "stockNumber"></input>
       </div>
     </div>
     <div class="form-row align-items-center d-flex justify-content-center">
       <div class="col-auto my-1 px-3 d-flex w-100">
         <label for="customer" class="m-auto w-100">Your name</label>
-        <input type = "text" class="form-control m-auto"></input>
+        <input type = "text" class="form-control m-auto" id = "yourName"></input>
       </div>
     </div>
     <div class="form-row align-items-center d-flex justify-content-center">
       <div class="col-auto my-1 px-3 d-flex w-100">
         <label class="m-auto w-100" for="customer">Phone and/or email</label>
-        <input type = "text" class="form-control m-auto"></input>
+        <input type = "text" class="form-control m-auto" id="yourPhoneEmail"></input>
       </div>
     </div>
     <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
@@ -179,7 +179,7 @@
     <div >
         <div class = "heading "><h1 class="d-flex justify-content-center">Payment Calculator</h1></div>
 
-        <form class = "" id = "my-form">
+        <form class = "payment">
             
             <div class="form-row align-items-center d-flex justify-content-center">
                 <div class="col-auto my-1 px-3 d-flex w-50">
