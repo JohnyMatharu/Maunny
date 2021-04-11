@@ -135,9 +135,13 @@ var imgArr = {
     
     };
         
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
     
-    document.getElementById("submitBtn").addEventListener("click", displayPicture);
-    document.getElementById("submitBtn").addEventListener("click", stockNumber);
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
      
     // this is to display the picture on click 
     function displayPicture(event) 
@@ -184,15 +188,29 @@ var imgArr = {
                         //divide by 48
                     tempInterest = interest/(length*interval);
                     numOfPayments = interval*length;
-                } else{$("#modalNegCheck").modal("show"); return; }
+                } else{$("#modalNegCheck").openModal(); return; }
                
-            } else {$("#modalPriceCheck").modal("show"); return;}
-        } else {$("#modalInputCheck").modal("show"); return;}
+            } else {$("#modalPriceCheck").openModal(); return;}
+        } else {$("#modalInputCheck").openModal(); return;}
         
         tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
         displayPayment(tempPrice.toFixed(2), intervalString);
     }
-    $("#my-form").on("click",".btn", function(event){
+    $("#search").on("click",".btn", function(event){
+        event.preventDefault();
+        var carYear = $("#year").val();
+        var carMake = $("#make").val();
+        var carMileage = $("#mileage").val();
+    
+    });
+    $("#interest").on("click",".btn", function(event){
+        event.preventDefault();
+        var stockNumber = $("#stockNumber").val();
+        var yourName = $("#yourName").val();
+        var yourPhoneEmail = $("#yourPhoneEmail").val();
+        if (stockNumber.isNaN){$("#modalInputCheck").openModal(); return;}
+    });
+    $("#payment").on("click",".btn", function(event){
         event.preventDefault();
         var vPrice = $("#v-price").val();
         var vDown = $("#v-down").val();
@@ -209,6 +227,7 @@ var imgArr = {
             $(".modal").modal("hide");
         }
     );
+
     
     
     

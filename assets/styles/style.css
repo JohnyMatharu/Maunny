@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.heading-text {
+    justify-content:center;
+}
+
 .menu {
     
     font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Sans', Arial;
@@ -16,17 +20,7 @@
     z-index: 1;
 }
 
-header h1
-{
-font-family: 'Kayak';
-padding-top: 9px;
-padding-bottom: 9px;
 
-align-items: center;
-color: royalblue;
-    /* here is from hriseon */
-font-size: 48px;
-    }
     
     /* this will give a different colour to logo */
 .logo-colour-mix1 {
@@ -51,9 +45,7 @@ header nav ul {
 
 header nav ul li a 
 {
-color: royalblue;
-padding-top: 27px;
-padding-bottom: 9px;
+
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -65,9 +57,11 @@ font-size: 18px;
 }
 
 .container {
-  
+    margin: auto;
+    width: 100%;
     background-color: #eceff8;
-    margin:auto;
+    padding: 50px;
+ 
 /* light artic ice */
  /* background-color: #F2FFFA;  */
 /* light aquamarine */
@@ -144,6 +138,9 @@ img {
 
 {
     height:90px;
+}
+#payment-calc{
+    padding: auto 100px auto;
 }
 
 

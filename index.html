@@ -6,11 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maunny's Automotive</title>
+  
   <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
     rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -18,346 +15,329 @@
     />
   
   <link href="https://fonts.googleapis.com/css?family=‘Kayak’" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/styles/style.css" />
   
 </head>
 <body>
   <header class="menu">
-    <h1>The Maunny's Automotive Club</h1> 
+    
    
 
      <!--following  is a mix choice-->
     <!-- <h1>MA<span class="logo-colour-mix1">UN</span><span class="logo-colour-mix2">NY</span></h1> -->
-    <nav>
-        <!-- unordered list of navigation begins-->
-        <ul>
-            <li>
-                <!-- navigation has been linked on same page using # using anchor element-->
-                <a href="lead-generation"><h3>Search a Vehicle</h3></a>
-            </li>
-            <li>
-                <a href="#auto-finance"><h3>Financing a Vehicle</h3></a>
-            </li>
-            <!-- <li> -->
-                <!-- <a href="#Maunny's-Automotive-Club"><h3>Join the Club</h3></a> -->
-            <!-- </li> -->
-            <!-- <li> -->
-              <!-- <a href="#window-mechanic"><h3>24hr Online Mechanic</h3></a> -->
-          <!-- </li> -->
+    
+    
+    <nav class = "nav-extended">
+      <div class="nav-wrapper">
+        <a class="brand-logo">The Maunny's Automotive Club</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="lead-generation">Search a Vehicle</a></li>
+          <li><a href="#auto-finance">Financing a Vehicle</a></li>
         </ul>
+      </div>
     </nav>
-</header>
-<section class= "container">
-  <div class = "heading  "><h1 class="d-flex justify-content-center ">Vehicle Search Inquiry</h1></div>
-  <br>
-  <br>
-  <div class = "row inquiryDiv d-flex justify-content-center">
+    
+  </header>
+  <div class = "container center-align">
+   
+    <div class = "heading "><h1 class="heading-text">Vehicle Search Inquiry</h1></div>
+
+    <div class = "row inquiry">
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-   <div class = "inquiry col-3">
+     <div class = " col s6">
      <!-- this is left div beg -->
-    <form class ="search">
-      <label for="cars">Year:</label>
-      <select id="year" class="custom-select m-auto ">
-        <option value="2006">2006</option>
-        <option value="2007">2007</option>
-        <option value="2008">2008</option>
-        <option value="2009">2009</option>
-        <option value="2010">2010</option>
-        <option value="2011">2011</option>
-        <option value="2012">2012</option>
-        <option value="2013">2013</option>
-        <option value="2014">2014</option>
-        <option value="2015">2015</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="YYYY" selected>YYYY</option>
-      </select>
-      <br>
-      <br>
-      <label for="cars">Make:</label>
-      <select id="make" class="custom-select m-auto ">
-        <option value="gmcsierra">GMC Sierra</option>
-        <option value="gmcterrain">GMC Terrain</option>
-        <option value="gmcacadia">GMC Acadia</option>
+      <form class ="left-align" id="search">
+        <label for="cars">Year:</label>
+        <select id="year" class="">
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="YYYY" selected>YYYY</option>
+        </select>
+        <label for="cars">Make:</label>
+        <select id="make" class="">
+          <option value="gmcsierra">GMC Sierra</option>
+          <option value="gmcterrain">GMC Terrain</option>
+          <option value="gmcacadia">GMC Acadia</option>
 
-        <option value="fordexplorer">Ford Explorer</option>
-        <option value="fordf150">Ford F 150</option>
+          <option value="fordexplorer">Ford Explorer</option>
+          <option value="fordf150">Ford F 150</option>
        
-        <option value="fordmustang">Ford Mustang</option>
-        <option value="chrysler300">Chrysler 300</option>
-        <option value="chryslervoyager">Chrysler Voyager</option>
-        <option value="toyotacamry">Toyota Camry</option>
-        <option value="toyotacorolla">Toyota Corolla</option>
-        <option value="lexusgx">Lexus GX</option>
-        <option value="lexusis300">Lexus is300</option>
-        <option value="lexusrx">Lexus RX</option>
+          <option value="fordmustang">Ford Mustang</option>
+          <option value="chrysler300">Chrysler 300</option>
+          <option value="chryslervoyager">Chrysler Voyager</option>
+          <option value="toyotacamry">Toyota Camry</option>
+          <option value="toyotacorolla">Toyota Corolla</option>
+          <option value="lexusgx">Lexus GX</option>
+          <option value="lexusis300">Lexus is300</option>
+          <option value="lexusrx">Lexus RX</option>
 
 
 
-        <option value="nissanaltima">Nissan Altima</option>
-        <option value="nissankicks">Nissan Kicks</option>
-        <option value="nissantitans">Nissan Titans</option>
-        <option value="nissanversa">Nissan Versa</option>
+          <option value="nissanaltima">Nissan Altima</option>
+          <option value="nissankicks">Nissan Kicks</option>
+          <option value="nissantitans">Nissan Titans</option>
+          <option value="nissanversa">Nissan Versa</option>
 
 
-        <option value="mitsibuishieclipse">Mitsibuishi Eclipse</option>
-        <option value="mitsibuishioutlander">Mitsibuishi Outlander</option>
+          <option value="mitsibuishieclipse">Mitsibuishi Eclipse</option>
+          <option value="mitsibuishioutlander">Mitsibuishi Outlander</option>
+          
         
         
+          <option value="hondacivic">Honda Civic</option>
+          <option value="hondacrv">Honda CRV</option>
+
+
+          <option value="mazda3">Mazda 3</option>
+          <option value="mazda6">Mazda 6</option>
         
-        <option value="hondacivic">Honda Civic</option>
-        <option value="hondacrv">Honda CRV</option>
 
 
-        <option value="mazda3">Mazda 3</option>
-        <option value="mazda6">Mazda 6</option>
+          <option value="kiastringer">Kia Stringer</option>
         
-
-
-        <option value="kiastringer">Kia Stringer</option>
-        
-        <option value="hyundaisonata">Hyundai Sonata</option>
-        <option value="hyundaisantafe">Hyundai Santa Fe</option>
+          <option value="hyundaisonata">Hyundai Sonata</option>
+          <option value="hyundaisantafe">Hyundai Santa Fe</option>
        
         
-        <option value="subarulegacy">Subaru Legacy</option>
-        <option value="subaruwrx">Subaru WRX</option>
+          <option value="subarulegacy">Subaru Legacy</option>
+          <option value="subaruwrx">Subaru WRX</option>
 
 
 
-        <option value="chevroletcamaro">Chevrolet Camaro</option>
-        <option value="chevroletcorvette">Chevrolet Corvette</option>
-        <option value="chevroletsuburban">Chevrolet Suburban</option>
+          <option value="chevroletcamaro">Chevrolet Camaro</option>
+          <option value="chevroletcorvette">Chevrolet Corvette</option>
+          <option value="chevroletsuburban">Chevrolet Suburban</option>
 
 
 
-        <option value="mercedescclass">Mercedes C Class</option>
-        <option value="mercedeseclass">Mercedes E Class</option>
-        <option value="mercedesglc">Mercedes GLC</option>
-        <option value="mercedesgle">Mercedes GLE</option>
+          <option value="mercedescclass">Mercedes C Class</option>
+          <option value="mercedeseclass">Mercedes E Class</option>
+          <option value="mercedesglc">Mercedes GLC</option>
+          <option value="mercedesgle">Mercedes GLE</option>
 
 
-        <option value="bmw3series">BMW 3 Series</option>
-        <option value="bmw5series">BMW 5 Series</option>
-        <option value="bmwx5">BMW X5 Series</option>
+          <option value="bmw3series">BMW 3 Series</option>
+          <option value="bmw5series">BMW 5 Series</option>
+          <option value="bmwx5">BMW X5 Series</option>
 
 
 
-        <option value="volkswagenatlas">Volkswagen Atlas</option>
-        <option value="volkswagengolf">Volkswagen Golf</option>
-        <option value="volkswagentiguan">Volkswagen Tiguan</option>
-        <option value="volkswagenjetta">Volkswagen Jetta</option>
+          <option value="volkswagenatlas">Volkswagen Atlas</option>
+          <option value="volkswagengolf">Volkswagen Golf</option>
+          <option value="volkswagentiguan">Volkswagen Tiguan</option>
+          <option value="volkswagenjetta">Volkswagen Jetta</option>
 
 
-        <option value="porschecarrera911">Porsche Carrera 911</option>
-        <option value="porschecayenne">Porsche Cayenne</option>
-        <option value="porschepanamera">Porsche Panamera</option>
+          <option value="porschecarrera911">Porsche Carrera 911</option>
+          <option value="porschecayenne">Porsche Cayenne</option>
+          <option value="porschepanamera">Porsche Panamera</option>
        
        
-        <option value="acuramdx">Acura MDX</option>
-        <option value="acurardx">Acura RDX</option>
-        <option value="acuratlx">Acura TLX</option>
+          <option value="acuramdx">Acura MDX</option>
+          <option value="acurardx">Acura RDX</option>
+          <option value="acuratlx">Acura TLX</option>
 
 
-        <option value="dodgedurango">Dodge Durango</option>
-        <option value="dodgechallenger">Dodge Challenger</option>
-        <option value="dodgecharger">Dodge Charger</option>
+          <option value="dodgedurango">Dodge Durango</option>
+          <option value="dodgechallenger">Dodge Challenger</option>
+          <option value="dodgecharger">Dodge Charger</option>
 
 
 
-        <option value="jeepwrangler">Jeep Wrangler</option>
-        <option value="YYYY" selected>----</option>
-      </select>
+          <option value="jeepwrangler">Jeep Wrangler</option>
+          <option value="YYYY" selected>----</option>
+        </select>
 <!-- you can use getelementbyID and attach models when users click on make, as event listener, list can populate for that make for models-->
-      <br>
-      <br>
-      <label for="cars">Mileage in km:</label>
-      <select id="mileage" class="custom-select m-auto ">
-        <option value="50">0 to 50,000 km</option>
-        <option value="100">50,000 to 1,00,000 km</option>
-        <option value="150">1,00,000 to 1,50,000 km</option>
-        <option value="200">1,50,000 to 2,00,000 km</option>
-        <option value="250">2,00,000 to 2,50,000 km</option>
-      </select>
-      <br>
-      <br>
-      <button id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
-    </form>
-  </div>
+
+        <label for="cars">Mileage in km:</label>
+        <select id="mileage" class="">
+          <option value="50">0 to 50,000 km</option>
+          <option value="100">50,000 to 1,00,000 km</option>
+          <option value="150">1,00,000 to 1,50,000 km</option>
+          <option value="200">1,50,000 to 2,00,000 km</option>
+          <option value="250">2,00,000 to 2,50,000 km</option>
+        </select>
+        <br>
+        <button class = "btn" id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </div>
   <!-- this is end of left div -->
 
 
 <!-- <div class = "carInfo"> -->
 
-  <div class = "carPictures">
+    <div class = "carPictures col s6 ">
     <!-- this is right div of container div  -->
-    <div class = "imageDisplay d-flex w-100">
-      <img id = "carDisplay"/> 
+      <div class = "imageDisplay ">
+        <img id = "carDisplay"/> 
     <!-- insert place holder div -->
-    </div>
-    <div id = "stockDisplay" >
+      </div>
+      <div id = "stockDisplay" >
     <!-- this is for stock number use in js to display stock, may have to use flex box #, make sure bottom margin of page fits -->
-    </div>
+      </div>
 <!-- this is end of car Pictures div -->
+    </div>
+
+
+
   </div>
-
-
-
-
 </div>
 <!-- this is parent boundary div for both left and right div ending i.e. flex container-->
-
-
-<div>
-  <form class = "interest">
+<div class = "container center-align">
+  
     
-    <label for="customer" class="w-100"><h4 class =" d-flex justify-content-center">Select vehicle</h4></label>
-    <br>
-    <div class="form-row align-items-center d-flex justify-content-center">
-      <div class="col-auto my-1 px-3 d-flex w-100">
-      <label for="customer" class="m-auto w-100">Stock number</label>
-      <input type = "text" class="form-control m-auto" id = "stockNumber"></input>
+    
+    <div class = "heading "><h1 class="">Select vehicle</h1></div>
+    <form class = "interest left-align" id = "interest">
+    <div class="">
+      <div class="">
+      <label for="customer" class="">Stock number</label>
+      <input type = "text" class="" id = "stockNumber"></input>
       </div>
     </div>
-    <div class="form-row align-items-center d-flex justify-content-center">
-      <div class="col-auto my-1 px-3 d-flex w-100">
-        <label for="customer" class="m-auto w-100">Your name</label>
-        <input type = "text" class="form-control m-auto" id = "yourName"></input>
+    <div class="">
+      <div class="">
+        <label for="customer" class="">Your name</label>
+        <input type = "text" class="" id = "yourName"></input>
       </div>
     </div>
-    <div class="form-row align-items-center d-flex justify-content-center">
-      <div class="col-auto my-1 px-3 d-flex w-100">
-        <label class="m-auto w-100" for="customer">Phone and/or email</label>
-        <input type = "text" class="form-control m-auto" id="yourPhoneEmail"></input>
+    <div class="">
+      <div class="">
+        <label class="" for="customer">Phone and/or email</label>
+        <input type = "text" class="" id="yourPhoneEmail"></input>
       </div>
     </div>
-    <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
     <br>
-    <br>
-    <br>
+    <button type="submit" name="submit" value="submit" class="btn">Submit</button>
   </form>
 </div>
-</section>
-<section>
 
 
-  <section class = "container">
-    <div >
-        <div class = "heading "><h1 class="d-flex justify-content-center">Payment Calculator</h1></div>
 
-        <form class = "payment">
+<div class = "container center-align">
+        <div class = "heading "><h1 class="">Payment Calculator</h1></div>
+
+        <form class = "interest left-align" id = "payment">
             
-            <div class="form-row align-items-center d-flex justify-content-center">
-                <div class="col-auto my-1 px-3 d-flex w-50">
-                    <label class="m-auto w-100" for="v-price">Vehicle Price ($): </label>
-                    <input type="text" class="form-control m-auto" id="v-price">
+            <div class="">
+                <div class="">
+                    <label class="" for="v-price">Vehicle Price ($): </label>
+                    <input type="text" class="" id="v-price">
                   </div>
             </div>
-            <div class="form-row align-items-center d-flex justify-content-center">
-                <div class="col-auto my-1 px-3 d-flex w-50">
-                    <label class="m-auto w-100" for="v-down">Down Payment ($): </label>
-                    <input type="text" class="form-control m-auto " id="v-down">
+            <div class="">
+                <div class="">
+                    <label class="" for="v-down">Down Payment ($): </label>
+                    <input type="text" class="" id="v-down">
                   </div>
             </div>
-            <div class="form-row align-items-center d-flex justify-content-center">
-                <div class="col-auto my-1 px-3 d-flex w-50">
+            <div class="">
+                <div class="">
                     <label class="m-auto w-100" for="v-interest">Interest Rate (%): </label>
-                    <select class="custom-select m-auto" id="v-interest">
+                    <select class="" id="v-interest">
                         <option value="0.2799">27.99%</option>
                         <option value="0.0799">7.99%</option>
                         <option value="0.0099">0.99%</option>
                     </select>
                   </div>
             </div>
-            <div class="form-row align-items-center d-flex justify-content-center">
-                <div class="col-auto my-1 px-3 d-flex w-50">
-                    <label class="m-auto w-100" for="v-interval">Chose payment interval</label>
-                    <select class="custom-select m-auto " id="v-interval">
+            <div class="">
+                <div class="">
+                    <label class="" for="v-interval">Chose payment interval</label>
+                    <select class=" " id="v-interval">
                         <option value="4">Weekly</option>
                         <option value="2">Bi-Monthly</option>
                         <option value="1">Monthly</option>
                     </select>
                 </div> 
             </div>
-            <div class="form-row align-items-center d-flex justify-content-center">
-                <div class="col-auto my-1 px-3 d-flex w-50">
-                    <label class="m-auto w-100" for="v-length">Chose Loan Length</label>
-                    <select class="custom-select m-auto" id="v-length">
+            <div class="">
+                <div class="">
+                    <label class="" for="v-length">Chose Loan Length</label>
+                    <select class="" id="v-length">
                         <option value="72">72</option>
                         <option value="84">84</option>
                   
                     </select>
                 </div> 
             </div>
-            <div class="col-auto my-3 d-flex justify-content-end w-75">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-            <h3 class= " mt-3 d-flex justify-content-center" id = "paymentValue"></h3>
-            <p class= "d-flex justify-content-center"id = "feeTaxes"></p>
+            <br>
+            <button type="submit" class="btn ">Submit</button>
+            
+            <h3 class= "" id = "paymentValue"></h3>
+            <p class= ""id = "feeTaxes"></p>
         </div>
           </form>
 
-    </div>
-
-  </container>
+</div>
 
 
-<div class="modal fade" id="modalPriceCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-    <div class="modal-dialog" role="document">
+
+<div class="modal" id="modalPriceCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Sorry!</h5>
-          </div>
-          <div class="modal-body">
+            <h5>Sorry!</h5>
             <p>We do not sell cars under $8000</p>
-          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default modalCloseBtn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
           </div>
         </div>
-      </div>
+  
 </div>
-<div class="modal fade" id="modalInputCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-    <div class="modal-dialog" role="document">
+<div class="modal " id="modalInputCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Input Error!</h5>
-          </div>
-          <div class="modal-body">
+            <h5>Input Error!</h5>
             <p>Please enter a number</p>
-          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default modalCloseBtn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
           </div>
         </div>
-      </div>
+  
 </div>
-<div class="modal fade" id="modalNegCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-  <div class="modal-dialog" role="document">
+<div class="modal" id="modalNegCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Input Error!</h5>
-        </div>
-        <div class="modal-body">
+          <h5>Input Error!</h5>
           <p>Your down payment is higher than the price</p>
-        </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default modalCloseBtn" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
+   
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
 </div>
 
-
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 </section>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./assets/javascript/js.js"></script>
 </body>
 </html>
