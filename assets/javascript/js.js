@@ -3,143 +3,9 @@ var negativeModalEl = document.getElementById("modalNegCheck");
 var inputModalEl = document.getElementById("modalInputCheck");
 var priceModalEl = document.getElementById("modalInputCheck");
 
-var imgArr = {
-
-    // new list in alphabetical order
-
-    acuramdx:{ picture : "./assets/images/car-pictures/acura-mdx.jpeg",
-    stockNo: "stNoam"},
-    acurardx:{ picture : "./assets/images/car-pictures/acura-rdx.jpeg",
-    stockNo: "stNoar"},
-    acuratlx:{ picture : "./assets/images/car-pictures/acura-tlx.jpeg",
-    stockNo: "stNoat"},
-    bmw3series:{ picture : "./assets/images/car-pictures/bmw-3series.jpeg.jpeg",
-    stockNo: "stNob3"},
-    bmw5series:{ picture : "./assets/images/car-pictures/bmw-5series.jpeg",
-    stockNo: "stNob5"},
-    bmwx5:{ picture : "./assets/images/car-pictures/bmw-x5.jpeg",
-    stockNo: "stNobx"},
-    chevroletcamaro:{ picture : "./assets/images/car-pictures/chevrolet-camaro.jpeg",
-    stockNo: "stNocc"}, 
-    chevroletcorvette:{ picture : "./assets/images/car-pictures/chevrolet-corvette.jpeg",
-    stockNo: "stNocc"},
-    chevroletsuburban:{ picture : "./assets/images/car-pictures/chevrolet-suburban.jpeg",
-    stockNo: "stNocs"},
-    fordmustang:{ picture : "./assets/images/car-pictures/ford-mustang.jpeg",
-    stockNo: "stNofm"},
-    fordf150:{ picture : "./assets/images/car-pictures/ford-f150.jpeg",
-    stockNo: "stNoff1"},
 
     
-    gmcsierra:{ picture : "./assets/images/car-pictures/gmc-sierra.jpeg",
-    stockNo: "stNogs"},
-    gmcterrain:{ picture : "./assets/images/car-pictures/gmc-terrain.jpeg",
-    stockNo: "stNogt"},
-    gmcacadia:{ picture : "./assets/images/car-pictures/gmc-acadia.jpeg",
-    stockNo: "stNoga"},
-
-
-
-    hyundaisantafe:{ picture : "./assets/images/car-pictures/hyundai-santafe.jpeg",
-    stockNo: "stNohs"},
-    jeepwrangler:{ picture : "./assets/images/car-pictures/jeep-wrangler.jpeg",
-    stockNo: "stNojw"},
-    lincolnmark:{ picture : "./assets/images/car-pictures/lincoln-mark.jpeg",
-    stockNo: "stNolm"},
-    mazda3:{ picture : "./assets/images/car-pictures/mazda-3.jpeg",
-    stockNo: "stNom3"},
-    mercedescclass:{ picture : "./assets/images/car-pictures/mercedes-cclass.jpeg",
-    stockNo: "stNomc"},
-    mercedeseclass:{ picture : "./assets/images/car-pictures/mercedes-eclass.png",
-    stockNo: "stNome"},
-    mercedesglc:{ picture : "./assets/images/car-pictures/mercedes-glc.jpeg",
-    stockNo: "stNomglc"},
-    mercedesgle:{ picture : "./assets/images/car-pictures/mercedes-gle.jpeg",
-    stockNo: "stNomg"},
-    porschecarrera911:{ picture : "./assets/images/car-pictures/porsche-carrera911.jpeg",
-    stockNo: "stNopc9"},
-    porschecayenne:{ picture : "./assets/images/car-pictures/porsche-cayenne.jpeg",
-    stockNo: "stNopc"},
-    porschepanamera:{ picture : "./assets/images/car-pictures/porsche-panamera.jpeg",
-    stockNo: "stNopp"},
-    subarulegacy:{ picture : "./assets/images/car-pictures/subaru-legacy.jpeg",
-    stockNo: "stNosl"},
-    subaruwrx:{ picture : "./assets/images/car-pictures/subaru-wrx.jpeg",
-    stockNo: "stNosw"},
-    volkswagenatlas:{ picture : "./assets/images/car-pictures/volkswagen-atlas.jpeg",
-    stockNo: "stNova"},
-    volkswagengolf:{ picture : "./assets/images/car-pictures/volkswagen-golf.jpeg",
-    stockNo: "stNovg"},
-    volkswagentiguan:{ picture : "./assets/images/car-pictures/volkswagen-tiguan.jpeg",
-    stockNo: "stNovt"},
-    volkswagenjetta:{ picture : "./assets/images/car-pictures/volkswagen-jetta.jpeg",
-    stockNo: "stNovj"},
-
-
-
-    dodgechallenger: { picture : "./assets/images/car-pictures/dodge-challenger.jpeg",
-    stockNo: "stNodc"},
-    dodgecharger: { picture : "./assets/images/car-pictures/dodge-charger.jpeg",
-    stockNo: "stNodchar"},
-
-
-// Anything below this is old and alphabetical order
-
-    chrysler300:{ picture : "./assets/images/car-pictures/Chrysler-300.jpeg",
-    stockNo: "stNoc3"},
-    chevroletequinox:{ picture : "./assets/images/car-pictures/chevrolet.equinox.png",
-    stockNo: "stNoce"},
-    chryslervoyager: { picture : "./assets/images/car-pictures/chrysler-voyager.png",
-    stockNo: "stNocv"},
-    dodgeram: { picture : "./assets/images/car-pictures/dodge-ram.png",
-    stockNo: "stNodr"},
-    fordexplorer: { picture : "./assets/images/car-pictures/ford-explorer.jpeg",
-    stockNo: "stNofe"},
-    fordsilverado: { picture : "./assets/images/car-pictures/ford-silverado.png",
-    stockNo: "stNofs"},
-    gmsierra: { picture : "./assets/images/car-pictures/gm-sierra.png",
-    stockNo: "stNogs"},
-    hondaaccord: { picture : "./assets/images/car-pictures/honda-accord.png",
-    stockNo: "stNoha"},
-    hondacivic: { picture : "./assets/images/car-pictures/honda-civic.png",
-    stockNo: "stNohc"},
-    hondacrv: { picture : "./assets/images/car-pictures/honda-crv.jpeg",
-    stockNo: "stNohcr"},
-    kiastringer: { picture : "./assets/images/car-pictures/kia-stringer.png",
-    stockNo: "stNoks"},
-    lexusgx: { picture : "./assets/images/car-pictures/lexus-gx.jpeg",
-    stockNo: "stNolg"},
-    lexusis300: { picture : "./assets/images/car-pictures/lexus-is300.png",
-    stockNo: "stNoli"},
-    lexusrx: { picture : "./assets/images/car-pictures/lexus-rx.png",
-    stockNo: "stNolr"},
-    mazda6: { picture : "./assets/images/car-pictures/mazda-6.jpeg",
-    stockNo: "stNom6"},
-    mitsubishieclipse: { picture : "./assets/images/car-pictures/mitsubishi-eclipse.jpeg",
-    stockNo: "stNome"},
-    mitsubishimirage: { picture : "./assets/images/car-pictures/mitsubishi-mirage.png",
-    stockNo: "stNomm"},
-    mitsubishioutlander: { picture : "./assets/images/car-pictures/mitsubishi-outlander.jpeg",
-    stockNo: "stNomo"},
-    nissanaltima: { picture : "./assets/images/car-pictures/nissan-altima.jpeg",
-    stockNo: "stNona"},
-    nissankicks: { picture : "./assets/images/car-pictures/nissan-kicks.jpeg",
-    stockNo: "stNonk"},
-    nissanrogue: { picture : "./assets/images/car-pictures/nissan-rogue.png",
-    stockNo: "stNonr"},
-    nissantitans: { picture : "./assets/images/car-pictures/nissan-titans.png",
-    stockNo: "stNont"},
-    nissanversa: { picture : "./assets/images/car-pictures/nissan-versa.png",
-    stockNo: "stNonv"},
-    toyotacamry: { picture : "./assets/images/car-pictures/toyota-camry.png",
-    stockNo: "stNotca"},
-    toyotacorolla: { picture : "./assets/images/car-pictures/toyota-corolla.jpeg",
-    stockNo: "stNotc"},
-    toyotafortuner: { picture : "./assets/images/car-pictures/toyota-fortuner.jpeg",
-    stockNo: "stNotf"}
-    
-    };
-        
+            
     $(document).ready(function(){
         $('select').formSelect();
       });
@@ -148,14 +14,384 @@ var imgArr = {
     {
         // event.preventDefault();
          document.getElementById("carDisplay").src = "./assets/images/car-pictures/"+car+".jpeg";
-    };
+         
+         switch (car) {
+           
+            case 'acura-mdx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoam";
+
+            break;
+            
+            case 'acura-rdx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoar";
+
+            break;
+
+            case 'acura-tlx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoat";
+
+            break;
+
+            case 'acura-tlx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoat";
+
+            break;
+        
+            case 'bmw-3series':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNob3";
+
+            break;
+
+            case 'bmw-5series':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNob5";
+
+            break;
+
+            case 'bmw-x5':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNobx";
+
+            break;
+            
+            case 'chevrolet-camaro:':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNocc";
+
+            break;
+           
+            case 'chevrolet-corvette:':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNocco";
+
+            break;
+         
+            case 'chevrolet-suburban:':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNocs";
+
+            break;
+
+            case 'ford-mustang':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNofm";
+
+            break;
+           
+            case 'ford-f150':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoff1";
+
+            break;
+
+            case 'gmc-sierra':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNogs";
+
+            break;
+        
+            case 'gmc-terrain':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNogt";
+
+            break;
+           
+            case 'gmc-acadia':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoga";
+
+            break;
+        
+            case 'hyundai-santafe':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNohs";
+
+            break;
+        
+            case 'jeep-wrangler':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNojw";
+
+            break;
+           
+
+            case 'lincoln-mark':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNolm";
+
+            break;
+           
+
+            case 'mazda-3':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNom3";
+
+            break;
+
+            case 'mercedes-cclass:':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNomc";
+
+            break;
+           
+            case 'mercedes-eclass':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNome";
+
+            break;
+        
+
+            case 'mercedes-glc':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNomglc";
+
+            break;
+          
+            case 'mercedes-gle':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNomg";
+
+            break;
+       
+            case 'porsche-carrera911':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNopc9";
+
+            break;
+       
+            case 'porsche-cayenne':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNopc";
+
+            break;
+         
+            case 'porsche-panamera':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNopp";
+
+            break;
+            
+            case 'subaru-legacy':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNosl";
+
+            break;
+       
+            case 'subaru-wrx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNosw";
+
+            break;
+            
+            case 'volkswagen-atlas':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNova";
+
+            break;
+           
+            case 'volkswagen-golf':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNovg";
+
+            break;
+          
+            case 'volkswagen-tiguan':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNovt";
+
+            break;
+         
+            case 'volkswagen-jetta':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNovj";
+
+            break;
+           
+            case 'dodge-challenger':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNodc";
+
+            break;
+        
+
+            case 'dodge-charger':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNodchar";
+
+            break;
+       
+            case 'chrysler-300':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoc3";
+
+            break;
+        
+        // Anything below this is old and alphabetical order
+        
+           
+            case 'chevrolet-equinox':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoce";
+
+            break;
+
+            case 'chrysler-voyager':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNocv";
+
+            break;
+      
+
+            case 'dodge-ram':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNodr";
+
+            break;
+          
+            case 'ford-explorer':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNofe";
+
+            break;
+     
+            
+            case 'chevrolet-silverado':
+            
+            document.getElementById("stockDisplay").innerHTML = "Stock Number: stNocs";
+
+        break;
+     
+            case 'honda-accord':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoha";
+
+            break;
+            
+                
+            
+            case 'honda-civic':
+            
+            document.getElementById("stockDisplay").innerHTML = "Stock Number: stNohc";
+
+        break;
+         
+            case 'honda-crv':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNohcr";
+
+            break;
+           
+            case 'kia-stringer':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoks";
+
+            break;
+         
+            case 'lexus-gx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNolg";
+
+            break;
+           
+            case 'lexus-is300':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNoli";
+
+            break;
+            
+            case 'lexus-rx':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNolr";
+
+            break;
+          
+            case 'mazda-6':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNom6";
+
+            break;
+         
+            case 'mitsubishi-eclipse':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNome";
+
+            break;
+       
+            case 'mitsubishi-mirage':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNomm";
+
+            break;
+      
+            case 'mitsubishi-outlander':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNomo";
+
+            break;
+           
+            case 'nissan-altima':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNona";
+
+            break;
+        
+            case 'nissan-kicks':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNonk";
+
+            break;
+          
+
+            case 'nissan-rogue':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNonr";
+
+            break;
+          
+            case 'nissan-titan':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNont";
+
+            break;
+          
+            case 'nissan-versa':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNonv";
+
+            break;
+            
+            case 'toyota-camry':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNotca";
+
+            break;
+           
+            case 'toyota-corolla':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNotc";
+
+            break;
+         
+            case 'toyota-fortuner':
+            
+                document.getElementById("stockDisplay").innerHTML = "Stock Number: stNotf";
+
+            break;
+            
+
+        };
       
       
      // this is to display the stock# on click 
-     function stockNumber()
-     {
+     //function stockNumber()
+     //{
 
-      document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
+      //document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
        
       };
       
