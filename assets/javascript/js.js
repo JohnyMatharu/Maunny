@@ -1,3 +1,8 @@
+
+var negativeModalEl = document.getElementById("modalNegCheck");
+var inputModalEl = document.getElementById("modalInputCheck");
+var priceModalEl = document.getElementById("modalInputCheck");
+
 var imgArr = {
 
     // new list in alphabetical order
@@ -139,10 +144,12 @@ var imgArr = {
         $('select').formSelect();
       });
     
-      $(document).ready(function(){
+    $(document).ready(function(){
         $('.modal').modal();
-      });
-     
+        
+    });
+      
+    
     // this is to display the picture on click 
     function displayPicture(event) 
      {
@@ -188,10 +195,10 @@ var imgArr = {
                         //divide by 48
                     tempInterest = interest/(length*interval);
                     numOfPayments = interval*length;
-                } else{$("#modalNegCheck").openModal(); return; }
+                } else{negativeModalEl.style.display = "block"; return; }
                
-            } else {$("#modalPriceCheck").openModal(); return;}
-        } else {$("#modalInputCheck").openModal(); return;}
+            } else {priceModalEl.style.display = "block"; return;}
+        } else {inputModalEl.style.display = "block"; return;}
         
         tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
         displayPayment(tempPrice.toFixed(2), intervalString);
@@ -208,7 +215,7 @@ var imgArr = {
         var stockNumber = $("#stockNumber").val();
         var yourName = $("#yourName").val();
         var yourPhoneEmail = $("#yourPhoneEmail").val();
-        if (stockNumber.isNaN){$("#modalInputCheck").openModal(); return;}
+        if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;}
     });
     $("#payment").on("click",".btn", function(event){
         event.preventDefault();
@@ -217,16 +224,18 @@ var imgArr = {
         var vInterest = $("#v-interest").val();
         var vInterval = $("#v-interval").val();
         var vLength = $("#v-length").val();
-        
-        calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);  
-        
+        calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);   
     });
     
-    $(".modalCloseBtn").click( 
+    $(".close").click( 
         function(event){
-            $(".modal").modal("hide");
+            negativeModalEl.style.display = "none";
+            priceModalEl.style.display = "none";
+            inputModalEl.style.display = "none";
         }
     );
+
+    
 
     
     
