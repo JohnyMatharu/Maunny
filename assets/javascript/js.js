@@ -144,28 +144,21 @@ var imgArr = {
         $('select').formSelect();
       });
     
-    $(document).ready(function(){
-        $('.modal').modal();
-        
-    });
-      
-    
-    // this is to display the picture on click 
-    function displayPicture(event) 
-     {
-        event.preventDefault();
-    document.getElementById("carDisplay").src = imgArr.volkswagenjetta.picture;
-    
-    };
-     
-     
-    // this is to display the stock# on click 
-    function stockNumber(event)
+    function displayPicture(car) 
     {
-        event.preventDefault();
-     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
+        // event.preventDefault();
+         document.getElementById("carDisplay").src = "./assets/images/car-pictures/"+car+".jpeg";
+    };
       
-     };
+      
+     // this is to display the stock# on click 
+     function stockNumber()
+     {
+
+      document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
+       
+      };
+      
     
     //test
     // this is to display the stock# on click 
@@ -208,6 +201,7 @@ var imgArr = {
         var carYear = $("#year").val();
         var carMake = $("#make").val();
         var carMileage = $("#mileage").val();
+        displayPicture(carMake);
     
     });
     $("#interest").on("click",".btn", function(event){
@@ -234,9 +228,6 @@ var imgArr = {
             inputModalEl.style.display = "none";
         }
     );
-
-    
-
     
     
     
