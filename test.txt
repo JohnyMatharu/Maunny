@@ -13,3 +13,35 @@ function displayPicture(car)
      document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
       
      };
+
+
+       <div class = "container center-align">
+            <div class = "heading "><h1 class="heading-text">Vehicle Search Inquiry</h1></div>
+            <div class = "row inquiry">
+                <div class = " col s12 l6">
+                    <form class ="left-align" id="search">
+
+
+    <div class = "heading "><h1 class="center-align">Select vehicle</h1></div>
+    <form class = "interest left-align" id = "interest">
+    
+      <div class="">
+      <label for="customer" class="">Stock number</label>
+      <input type = "text" class="" id = "stockNumber"></input>
+      </div>
+    
+    
+      <div class="">
+        <label for="customer" class="">Your name</label>
+        <input type = "text" class="" id = "yourName"></input>
+      </div>
+    
+    
+      <div class="">
+        <label for="customer">Phone and/or email</label>
+        <input type = "email" id="yourPhoneEmail"></input>
+      </div>
+    
+      <br>
+      <button type="submit" name="submit" value="submit" class="btn">Submit</button>
+    </form>

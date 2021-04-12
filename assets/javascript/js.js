@@ -1,7 +1,35 @@
 
+//var displayArr = JSON.parse(localStorage.getItem("carArray")) || [];
+//console.log(displayArr);
+
 var negativeModalEl = document.getElementById("modalNegCheck");
 var inputModalEl = document.getElementById("modalInputCheck");
 var priceModalEl = document.getElementById("modalInputCheck");
+var personalInfo = {};
+
+var loadPersonalInfo = function(){
+    personalInfo = JSON.parse(localStorage.getItem("personalInfo"));
+
+    if (!personalInfo){
+        personalInfo = {
+            stockNumber : "123",
+            yourName : null,
+            yourEmail : null
+        };
+    }
+    displayPersonalInfo(personalInfo);
+}
+
+var savePersonalInfo = function(){
+    localStorage.setItem("personalInfo", JSON.stringify(personalInfo)); 
+}
+
+var displayPersonalInfo = function(personalInfo){
+    
+    $("#stockNumber").val(personalInfo.stockNumber);
+    $("#yourName").val(personalInfo.yourName);
+    $("#yourPhoneEmail").val(personalInfo.yourEmail);
+}
 
 
     
@@ -386,13 +414,29 @@ var priceModalEl = document.getElementById("modalInputCheck");
 
         };
       
-      
-     // this is to display the stock# on click 
-     //function stockNumber()
-     //{
+       // function dropdownHistory(event){
+         //   event.preventDefault();
+       // let selectArr = [];
+      // selectArr.push(car);
+       // console.log(selectArr[]);
+        //localStorage.setItem("carArr",JSON.stringify(car));
+        //localStorage.setItem("cityArray",JSON.stringify(entryArr));
+        
+        //var displayLine = JSON.parse(localStorage.getItem("carArr")) || [];
+        
+       //document.getElementById("searchHistory").innerHTML = displayLine.textContent;
+        //console.log(displayline);
+        //let newLine = document.createElement('button');
+        
+         
+        
+        //newLine.textContent = displayLine;
+        //console.log(newLine.textContent);
+        //list.appendChild(newLine);
+        //console.log(newLine.textContent);
+        //newLine.addEventListener("click", (ev) => historyWeather(ev.target.textContent));
+        
 
-      //document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
-       
       };
       
     
@@ -432,12 +476,14 @@ var priceModalEl = document.getElementById("modalInputCheck");
         tempPrice = (tempInterest*Math.pow(1+tempInterest, numOfPayments)/((Math.pow(1+tempInterest, numOfPayments))-1))*tempPrice;
         displayPayment(tempPrice.toFixed(2), intervalString);
     }
+
     $("#search").on("click",".btn", function(event){
         event.preventDefault();
         var carYear = $("#year").val();
         var carMake = $("#make").val();
         var carMileage = $("#mileage").val();
         displayPicture(carMake);
+        //connect the function for local storage
     
     });
     $("#interest").on("click",".btn", function(event){
@@ -445,7 +491,13 @@ var priceModalEl = document.getElementById("modalInputCheck");
         var stockNumber = $("#stockNumber").val();
         var yourName = $("#yourName").val();
         var yourPhoneEmail = $("#yourPhoneEmail").val();
-        if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;}
+        if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;
+        } else {
+            personalInfo.yourName = yourName;
+            personalInfo.stockNumber = stockNumber;
+            personalInfo.yourEmail = yourPhoneEmail;
+            savePersonalInfo();
+        }
     });
     $("#payment").on("click",".btn", function(event){
         event.preventDefault();
@@ -464,6 +516,8 @@ var priceModalEl = document.getElementById("modalInputCheck");
             inputModalEl.style.display = "none";
         }
     );
+
+    loadPersonalInfo();
     
     
     

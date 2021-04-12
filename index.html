@@ -29,12 +29,14 @@
     
     
     <nav class = "nav-extended">
-      <div class="nav-wrapper">
-        <a class="brand-logo">The Maunny's Automotive Club</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#lead-generation">Search a Vehicle</a></li>
-          <li><a href="#auto-finance">Financing a Vehicle</a></li>
-        </ul>
+      <div class="nav-wrapper row">
+        <a class="brand-logo left">The Maunny's Automotive Club</a>
+        <div>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="lead-generation">Search a Vehicle</a></li>
+            <li><a href="#auto-finance">Financing a Vehicle</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     
@@ -45,7 +47,7 @@
 
     <div class = "row inquiry">
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-     <div class = " col s6">
+     <div class = " col s12 l6">
      <!-- this is left div beg -->
       <form class ="left-align" id="search">
         <label for="cars">Year:</label>
@@ -176,13 +178,15 @@
         <br>
         <button class = "btn" id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
       </form>
+
+      <br><br>
     </div>
   <!-- this is end of left div -->
 
 
 <!-- <div class = "carInfo"> -->
 
-    <div class = "carPictures col s6 ">
+    <div class = "carPictures col s12 l6">
     <!-- this is right div of container div  -->
       <div class = "imageDisplay ">
         <img id = "carDisplay"/> 
@@ -193,62 +197,57 @@
       </div>
 <!-- this is end of car Pictures div -->
     </div>
-
-
-
   </div>
 </div>
 <!-- this is parent boundary div for both left and right div ending i.e. flex container-->
 <div class = "container center-align">
-  
+    <div class = "heading "><h1>Select vehicle</h1></div>
+    <div class = "row inquiry">
+    <form class = "interest left-align col s12 l6 offset-l3" id = "interest">
     
-    
-    <div id="auto-finance" class = "heading "><h1 class="">Select vehicle</h1></div>
-    <form class = "interest left-align" id = "interest">
-    <div class="">
       <div class="">
-      <label for="customer" class="">Stock number</label>
+      <label for="customer" class="left-align">Stock number</label>
       <input type = "text" class="" id = "stockNumber"></input>
       </div>
-    </div>
-    <div class="">
+    
+    
       <div class="">
         <label for="customer" class="">Your name</label>
         <input type = "text" class="" id = "yourName"></input>
       </div>
-    </div>
-    <div class="">
+    
+    
       <div class="">
-        <label class="" for="customer">Phone and/or email</label>
-        <input type = "text" class="" id="yourPhoneEmail"></input>
+        <label for="customer">Email</label>
+        <input type = "email" id="yourPhoneEmail"></input>
       </div>
-    </div>
-    <br>
-    <button type="submit" name="submit" value="submit" class="btn">Submit</button>
-  </form>
+    
+      <br>
+      <button type="submit" name="submit" value="submit" class="btn">Submit</button>
+    </form>
+  </div>
 </div>
 
 
-
 <div class = "container center-align">
-        <div class = "heading "><h1 class="">Payment Calculator</h1></div>
-
-        <form class = "interest left-align" id = "payment">
+        <div class = "heading "><h1>Payment Calculator</h1></div>
+        <div class = "row inquiry">
+        <form class = "interest left-align col s12 l6 offset-l3" id = "payment">
             
-            <div class="">
-                <div class="">
+            
+                <div>
                     <label class="" for="v-price">Vehicle Price ($): </label>
                     <input type="text" class="" id="v-price">
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="" for="v-down">Down Payment ($): </label>
                     <input type="text" class="" id="v-down">
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="m-auto w-100" for="v-interest">Interest Rate (%): </label>
                     <select class="" id="v-interest">
                         <option value="0.2799">27.99%</option>
@@ -256,19 +255,19 @@
                         <option value="0.0099">0.99%</option>
                     </select>
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="" for="v-interval">Chose payment interval</label>
                     <select class=" " id="v-interval">
                         <option value="4">Weekly</option>
                         <option value="2">Bi-Monthly</option>
                         <option value="1">Monthly</option>
                     </select>
-                </div> 
-            </div>
-            <div class="">
-                <div class="">
+                </div>
+            
+            
+                <div>
                     <label class="" for="v-length">Chose Loan Length</label>
                     <select class="" id="v-length">
                         <option value="72">72</option>
@@ -276,14 +275,15 @@
                   
                     </select>
                 </div> 
-            </div>
+            
             <br>
             <button type="submit" class="btn ">Submit</button>
             
             <h3 class= "" id = "paymentValue"></h3>
             <p class= ""id = "feeTaxes"></p>
         </div>
-          </form>
+        </form>
+        </div>
 
 </div>
 
@@ -323,26 +323,52 @@
    
 </div>
 </section>
-
-<footer>
-  <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132561.58293136169!2d-79.30509118948036!3d43.608677553535436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b8f331fd9b%3A0x8d1d9bb6765a76f7!2sUniversity%20of%20Toronto%20-%20St.%20George%20Campus!5e0!3m2!1sen!2sca!4v1618181770164!5m2!1sen!2sca" 
-    width="300" 
-    height="250" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
-</div>
-  <h2></h2>
-  <div>
-      <a href="https://github.com/JohnnyMatharu"><img src="./assets/images/25231.png">Johnny Matharu </a>
-      <a href="https://github.com/liaof"><img src="./assets/images/25231.png">Fanxi Liao </a>
-      <a href="https://github.com/DanyalKhanzada"><img src="./assets/images/25231.png">Danyal Khanzada </a>
-      <a href="https://github.com/temjanet"><img src="./assets/images/25231.png">Janet Tem </a><br/>
-      &copy; University of Toronto Coding Bootcamp 2021
+<section id="reach-out" class="contact">
+  <div class="flex-row">
+    <h2 class="section-title secondary-border">
+      Contact Us
+    </h2>
   </div>
-</footer>
+
+  <div class="contact-info">
+    <div>
+      <h3>Maunny</h3>
+      <p>
+        Our Customer Service Department is at your complete disposal for any questions about Maunny
+        <br/>
+        Contact us and we'll be happy to assist you
+      </p>
+
+      <address>
+        27 King's College Cir<br/>
+        Toronto, ON <br/>
+        MST0B3<br/>
+        P: +1 (647) 989 8989<br/>
+        Ext: 501-509<br/>
+        E: <a href="mailto:maunny@maunyauto.com">maunny@maunyauto.com</a>
+      </address>
+      
+    </div>
+
+    <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
+          frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+    
+    </section>
+
+    <footer>
+      <h2></h2>
+      <div>
+          <a href="https://github.com/JohnnyMatharu"><img src="./assets/images/25231.png">Johnny Matharu </a>
+          <a href="https://github.com/liaof"><img src="./assets/images/25231.png">Fanxi Liao </a>
+          <a href="https://github.com/DanyalKhanzada"><img src="./assets/images/25231.png">Danyal Khanzada </a>
+          <a href="https://github.com/temjanet"><img src="./assets/images/25231.png">Janet Tem </a><br/>
+          &copy; University of Toronto Coding Bootcamp 2021
+      </div>
+    </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
