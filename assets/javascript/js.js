@@ -2,6 +2,31 @@
 var negativeModalEl = document.getElementById("modalNegCheck");
 var inputModalEl = document.getElementById("modalInputCheck");
 var priceModalEl = document.getElementById("modalInputCheck");
+var personalInfo = {};
+
+var loadPersonalInfo = function(){
+    personalInfo = JSON.parse(localStorage.getItem("personalInfo"));
+
+    if (!personalInfo){
+        personalInfo = {
+            stockNumber : "123",
+            yourName : null,
+            yourEmail : null
+        };
+    }
+    displayPersonalInfo(personalInfo);
+}
+
+var savePersonalInfo = function(){
+    localStorage.setItem("personalInfo", JSON.stringify(personalInfo)); 
+}
+
+var displayPersonalInfo = function(personalInfo){
+    
+    $("#stockNumber").val(personalInfo.stockNumber);
+    $("#yourName").val(personalInfo.yourName);
+    $("#yourPhoneEmail").val(personalInfo.yourEmail);
+}
 
 
     
@@ -445,7 +470,13 @@ var priceModalEl = document.getElementById("modalInputCheck");
         var stockNumber = $("#stockNumber").val();
         var yourName = $("#yourName").val();
         var yourPhoneEmail = $("#yourPhoneEmail").val();
-        if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;}
+        if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;
+        } else {
+            personalInfo.yourName = yourName;
+            personalInfo.stockNumber = stockNumber;
+            personalInfo.yourEmail = yourPhoneEmail;
+            savePersonalInfo();
+        }
     });
     $("#payment").on("click",".btn", function(event){
         event.preventDefault();
@@ -464,6 +495,8 @@ var priceModalEl = document.getElementById("modalInputCheck");
             inputModalEl.style.display = "none";
         }
     );
+
+    loadPersonalInfo();
     
     
     
