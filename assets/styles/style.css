@@ -222,3 +222,50 @@ img {
   .contact-info a {
     color: var(--primary-color);
   }
+
+/* Contact Us Section */
+
+.contact {
+  background: #f3ede9;
+}
+
+.contact h2 {
+  color: #4a4a4a;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info div {
+  color:#4a4a4a;
+}
+
+.contact-info h3 {
+  color: #4a4a4a;
+  font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #4a4a4a;
+}
+
+
