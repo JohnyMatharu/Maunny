@@ -1,0 +1,15 @@
+function displayPicture(car) 
+     {
+       // event.preventDefault();
+        document.getElementById("carDisplay").src = "./assets/images/car-pictures/"+car+".jpeg";
+    
+    };
+     
+     
+    // this is to display the stock# on click 
+    function stockNumber(event)
+    {
+        event.preventDefault();
+     document.getElementById("stockDisplay").innerHTML = "Stock Number:" + " " + imgArr.volkswagenjetta.stockNo;
+      
+     };

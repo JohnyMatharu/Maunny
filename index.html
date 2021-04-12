@@ -5,333 +5,351 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maunny's Automotive Club</title>
+  <title>Maunny's Automotive</title>
+  
+  <link
+    rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  
   <link href="https://fonts.googleapis.com/css?family=‘Kayak’" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/styles/style.css" />
   
 </head>
 <body>
   <header class="menu">
-    <h1>MAUNNY</h1> 
+    
    
-
-
-
-    <!-- 
-please make draw.io, then pseudocode , consult famous sites 
-     -->
-
-
-
-
-
-
 
      <!--following  is a mix choice-->
     <!-- <h1>MA<span class="logo-colour-mix1">UN</span><span class="logo-colour-mix2">NY</span></h1> -->
-    <nav>
-        <!-- unordered list of navigation begins-->
-        <ul>
-            <li>
-                <!-- navigation has been linked on same page using # using anchor element-->
-                <a href="lead-generation"><h3>Search a Vehicle</h3></a>
-            </li>
-            <li>
-                <a href="#auto-finance"><h3>Financing a Vehicle</h3></a>
-            </li>
-            <li>
-                <a href="#Maunny's-Automotive-Club"><h3>Join the Club</h3></a>
-            </li>
-            <li>
-              <a href="#window-mechanic"><h3>24hr Online Mechanic</h3></a>
-          </li>
+    
+    
+    <nav class = "nav-extended">
+      <div class="nav-wrapper">
+        <a class="brand-logo">The Maunny's Automotive Club</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#lead-generation">Search a Vehicle</a></li>
+          <li><a href="#auto-finance">Financing a Vehicle</a></li>
         </ul>
+      </div>
     </nav>
-</header>
-<section class= "container">
-  <div class = "heading"><h1>Vehicle Search Inquiry</h1></div>
-  <div class = "inquiry">
+    
+  </header>
+  <div class = "container center-align">
+   
+    <div id="lead-generation" class = "heading "><h1 class="heading-text">Vehicle Search Inquiry</h1></div>
+
+    <div class = "row inquiry">
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-    <br>
-    <br>
-    <br>
-    <form>
-    <label for="cars">Year:</label>
-  <select id="year">
-    <option value="2006">2006</option>
-    <option value="2007">2007</option>
-    <option value="2008">2008</option>
-    <option value="2009">2009</option>
-    <option value="2010">2010</option>
-    <option value="2011">2011</option>
-    <option value="2012">2012</option>
-    <option value="2013">2013</option>
-    <option value="2014">2014</option>
-    <option value="2015">2015</option>
-    <option value="2016">2016</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-    <option value="YYYY" selected>YYYY</option>
-  </select>
-<br>
-<br>
-<label for="cars">Make:</label>
-<select id="make">
-  <option value="GM">GM</option>
-  <option value="Ford">Ford</option>
-  <option value="Chrysler">Chrysler</option>
-  <option value="Toyota">Toyota</option>
-  <option value="Lexus">Kia</option>
-  <option value="Nissan">Nissan</option>
-  <option value="Mitsibuishi">Mitsibuishi</option>
-  <option value="Honda">Honda</option>
-  <option value="Mazda">Mazda</option>
-  <option value="Kia">Kia</option>
-  <option value="Hyundai">Hyundai</option>
-  <option value="Subaru">Subaru</option>
-  <option value="Chevrolet">Chevrolet</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="BMW">BMW</option>
-  <option value="Volkswagen">Volkswagen</option>
-  <option value="Porsche">Porsche</option>
-  <option value="Acura">Acura</option>
-  <option value="Dodge">Dodge</option>
-  <option value="Jeep">Jeep</option>
-  <option value="YYYY" selected>----</option>
-</select>
+     <div class = " col s6">
+     <!-- this is left div beg -->
+      <form class ="left-align" id="search">
+        <label for="cars">Year:</label>
+        <select id="year" class="">
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="YYYY" selected>YYYY</option>
+        </select>
+        <label for="cars">Make:</label>
+        <select id="make" class="">
+          <option value="gmc-sierra">GMC Sierra</option>
+          <option value="gmc-terrain">GMC Terrain</option>
+          <option value="gmc-acadia">GMC Acadia</option>
+
+          <option value="ford-explorer">Ford Explorer</option>
+          <option value="ford-f150">Ford F 150</option>
+       
+          <option value="ford-mustang">Ford Mustang</option>
+          <option value="chrysler-300">Chrysler 300</option>
+          <option value="chrysler-voyager">Chrysler Voyager</option>
+          <option value="toyota-camry">Toyota Camry</option>
+          <option value="toyota-corolla">Toyota Corolla</option>
+          <option value="lexus-gx">Lexus GX</option>
+          <option value="lexus-is300">Lexus is300</option>
+          <option value="lexus-rx">Lexus RX</option>
+
+
+
+          <option value="nissan-altima">Nissan Altima</option>
+          <option value="nissan-kicks">Nissan Kicks</option>
+          <option value="nissan-titans">Nissan Titans</option>
+          <option value="nissan-versa">Nissan Versa</option>
+
+
+          <option value="mitsibuishi-eclipse">Mitsibuishi Eclipse</option>
+          <option value="mitsibuishi-outlander">Mitsibuishi Outlander</option>
+          
+        
+        
+          <option value="honda-civic">Honda Civic</option>
+          <option value="honda-crv">Honda CRV</option>
+
+
+          <option value="mazda-3">Mazda 3</option>
+          <option value="mazda-6">Mazda 6</option>
+        
+
+
+          <option value="kia-stringer">Kia Stringer</option>
+        
+          <option value="hyundai-sonata">Hyundai Sonata</option>
+          <option value="hyundai-santafe">Hyundai Santa Fe</option>
+       
+        
+          <option value="subaru-legacy">Subaru Legacy</option>
+          <option value="subaru-wrx">Subaru WRX</option>
+
+
+
+          <option value="chevrolet-camaro">Chevrolet Camaro</option>
+          <option value="chevrolet-corvette">Chevrolet Corvette</option>
+          <option value="chevrolet-suburban">Chevrolet Suburban</option>
+          <option value="chevrolet-silverado">Chevrolet Silverado</option>
+
+
+
+          <option value="mercede-scclass">Mercedes C Class</option>
+          <option value="mercedes-eclass">Mercedes E Class</option>
+          <option value="mercedes-glc">Mercedes GLC</option>
+          <option value="mercedes-gle">Mercedes GLE</option>
+
+
+          <option value="bmw-3series">BMW 3 Series</option>
+          <option value="bmw-5series">BMW 5 Series</option>
+          <option value="bmw-x5">BMW X5 Series</option>
+
+
+
+          <option value="volkswagen-atlas">Volkswagen Atlas</option>
+          <option value="volkswagen-golf">Volkswagen Golf</option>
+          <option value="volkswagen-tiguan">Volkswagen Tiguan</option>
+          <option value="volkswagen-jetta">Volkswagen Jetta</option>
+
+
+          <option value="porsche-carrera911">Porsche Carrera 911</option>
+          <option value="porsche-cayenne">Porsche Cayenne</option>
+          <option value="porsche-panamera">Porsche Panamera</option>
+       
+       
+          <option value="acura-mdx">Acura MDX</option>
+          <option value="acura-rdx">Acura RDX</option>
+          <option value="acura-tlx">Acura TLX</option>
+
+
+          <option value="dodge-durango">Dodge Durango</option>
+          <option value="dodge-challenger">Dodge Challenger</option>
+          <option value="dodge-charger">Dodge Charger</option>
+
+
+
+          <option value="jeep-wrangler">Jeep Wrangler</option>
+          <option value="YYYY" selected>----</option>
+        </select>
 <!-- you can use getelementbyID and attach models when users click on make, as event listener, list can populate for that make for models-->
-<br>
-<br>
-<label for="cars">Mileage in km:</label>
-<select id="Mileage">
-  <option value="50">0 to 50,000 km</option>
-  <option value="100">50,000 to 1,00,000 km</option>
-  <option value="150">1,00,000 to 1,50,000 km</option>
-  <option value="200">1,50,000 to 2,00,000 km</option>
-  <option value="250">2,00,000 to 2,50,000 km</option>
-  </select>
-  <br>
-  <br>
-  <button type="submit" name="submit" value="submit">Submit</button>
-</form>
+
+        <label for="cars">Mileage in km:</label>
+        <select id="mileage" class="">
+          <option value="50">0 to 50,000 km</option>
+          <option value="100">50,000 to 1,00,000 km</option>
+          <option value="150">1,00,000 to 1,50,000 km</option>
+          <option value="200">1,50,000 to 2,00,000 km</option>
+          <option value="250">2,00,000 to 2,50,000 km</option>
+        </select>
+        <br>
+        <button class = "btn" id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </div>
+  <!-- this is end of left div -->
+
+
+<!-- <div class = "carInfo"> -->
+
+    <div class = "carPictures col s6 ">
+    <!-- this is right div of container div  -->
+      <div class = "imageDisplay ">
+        <img id = "carDisplay"/> 
+    <!-- insert place holder div -->
+      </div>
+      <div id = "stockDisplay" >
+    <!-- this is for stock number use in js to display stock, may have to use flex box #, make sure bottom margin of page fits -->
+      </div>
+<!-- this is end of car Pictures div -->
+    </div>
+
+
+
   </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class = "interest">
-<form class = "interest">
-  <br>
-<br>
-<br>
-<label for="customer"><h4>Select vehicle</h4></label>
-<br>
-  <label for="customer">Stock# of vehicle</label>
-<input type = "text"></input>
-<label for="customer">Your name</label>
-<input type = "text"></input>
-<label for="customer">Phone and/or email</label>
-<input type = "text"></input>
-<br>
-<br>
-<button type="submit" name="submit" value="submit">Submit</button>
-</form>
+</div>
+<!-- this is parent boundary div for both left and right div ending i.e. flex container-->
+<div class = "container center-align">
+  
+    
+    
+    <div id="auto-finance" class = "heading "><h1 class="">Select vehicle</h1></div>
+    <form class = "interest left-align" id = "interest">
+    <div class="">
+      <div class="">
+      <label for="customer" class="">Stock number</label>
+      <input type = "text" class="" id = "stockNumber"></input>
+      </div>
+    </div>
+    <div class="">
+      <div class="">
+        <label for="customer" class="">Your name</label>
+        <input type = "text" class="" id = "yourName"></input>
+      </div>
+    </div>
+    <div class="">
+      <div class="">
+        <label class="" for="customer">Phone and/or email</label>
+        <input type = "text" class="" id="yourPhoneEmail"></input>
+      </div>
+    </div>
+    <br>
+    <button type="submit" name="submit" value="submit" class="btn">Submit</button>
+  </form>
+</div>
+
+
+
+<div class = "container center-align">
+        <div class = "heading "><h1 class="">Payment Calculator</h1></div>
+
+        <form class = "interest left-align" id = "payment">
+            
+            <div class="">
+                <div class="">
+                    <label class="" for="v-price">Vehicle Price ($): </label>
+                    <input type="text" class="" id="v-price">
+                  </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <label class="" for="v-down">Down Payment ($): </label>
+                    <input type="text" class="" id="v-down">
+                  </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <label class="m-auto w-100" for="v-interest">Interest Rate (%): </label>
+                    <select class="" id="v-interest">
+                        <option value="0.2799">27.99%</option>
+                        <option value="0.0799">7.99%</option>
+                        <option value="0.0099">0.99%</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <label class="" for="v-interval">Chose payment interval</label>
+                    <select class=" " id="v-interval">
+                        <option value="4">Weekly</option>
+                        <option value="2">Bi-Monthly</option>
+                        <option value="1">Monthly</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="">
+                <div class="">
+                    <label class="" for="v-length">Chose Loan Length</label>
+                    <select class="" id="v-length">
+                        <option value="72">72</option>
+                        <option value="84">84</option>
+                  
+                    </select>
+                </div> 
+            </div>
+            <br>
+            <button type="submit" class="btn ">Submit</button>
+            
+            <h3 class= "" id = "paymentValue"></h3>
+            <p class= ""id = "feeTaxes"></p>
+        </div>
+          </form>
+
+</div>
+
+
+
+<div class="my-modal" id="modalPriceCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
+        <div class="my-modal-content">
+            <h5>Sorry!</h5>
+            <p>We do not sell cars under $8000</p>
+          <div class="modal-footer">
+            <button type="button" class="btn close" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+  
+</div>
+<div class="my-modal " id="modalInputCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
+        <div class="my-modal-content">
+            <h5>Input Error!</h5>
+            <p>Please enter a number</p>
+          <div class="modal-footer">
+            <button type="button" class="btn close" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+  
+</div>
+<div class="my-modal" id="modalNegCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  
+      <div class="my-modal-content">
+          <h5>Input Error!</h5>
+          <p>Your down payment is higher than the price</p>
+        <div class="modal-footer">
+          <button type="button" class="btn close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+   
 </div>
 </section>
 
-  
+<footer>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132561.58293136169!2d-79.30509118948036!3d43.608677553535436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b8f331fd9b%3A0x8d1d9bb6765a76f7!2sUniversity%20of%20Toronto%20-%20St.%20George%20Campus!5e0!3m2!1sen!2sca!4v1618181770164!5m2!1sen!2sca" 
+    width="300" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
+  <h2></h2>
+  <div>
+      <a href="https://github.com/JohnnyMatharu"><img src="./assets/images/25231.png">Johnny Matharu </a>
+      <a href="https://github.com/liaof"><img src="./assets/images/25231.png">Fanxi Liao </a>
+      <a href="https://github.com/DanyalKhanzada"><img src="./assets/images/25231.png">Danyal Khanzada </a>
+      <a href="https://github.com/temjanet"><img src="./assets/images/25231.png">Janet Tem </a><br/>
+      &copy; University of Toronto Coding Bootcamp 2021
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/javascript/js.js"></script>
+
 </body>
 </html>
 
 
-
-
-<!-- 
-new design: refer carklicks to merge data
-pg 1: landing page
-
-header, nav
-logo: Make sure it looks simple , generic and illustrative with very simple single sign and simple object 
-
-Maunny has all dealership operations online 
-
-Money is Maunny and Maunny is money. 
-
-
- top 4 and contact at bottom, forms and chat bar, following are the sections, sign up button to be a member what free services you will get, use facebook/google login
-
-1. First section vehicle pics demos/models create kick energetic motivation, with chat with link to main application form for maunny’s club . Hit button form will come,
-lead generation vehicle search suggestions (only suggestions email, no force, if interested call)
-
-2. payment calculator
-You can link carfax report on your site and get data from other sites, same thing for credit check, third link to sell vehicle trade in 
-
-3.
-First section vehicle demos with chat with link to main application form for maunny’s club . Hit button form will come, 
-water sport, motorsport, McLaren F1 car racing, NASCAR, bike wear, motor cycle clothing 
-register to get free T-shirt , design yourself
-Design your own clothing, choose your logo style and positioning, choose your size and shape
-
-4.
-You can provide technical help through mechanics, recommendations, incl for DY parts, quotations, 
-Section reviews with graphs if any, trade show reviews and reviews in general for purchase 
-
-5. Testimonials (can include videos here)
-
-6. contact us and copyright
-
-
-
-
-pg 2. Sales: search a vehicle new and used , reviews
-
-
-
-
-
-pg 3. Finance: payment calculator, online consult
-
-pg 4. Sports and auto sport clothing special deals, online change room size 
-
-pg 5. Window mechanic for service advice and scheduler, reviews and manuals
-
-pg 6. contact us
-
-
-text and logo colour
-color: 1. royal blue 
-2. blueviolet 
-3. orchid 
-
-
-//Step #1: Build a Small Application: use 3rd party API to import some valuable data from other sides
-With your new skills, you may be tempted to incorporate external data in your existing portfolio, like displaying today's weather. But why not take things a step further? Try building a small application that's enticing to prospective employers. For example, you could build a dynamic weather app that uses the browser API to get the user's location, then makes a request to an external API to display the weather. Be sure to push the final page to GitHub, get a live site going, and write a fully formed README file.
-
-
-//pseudocode
-On the left menu bar you can choose options on the site, such as draggable to get the demo how to use it 
-Maunny chat or dialougue box can use modal bootstrap properties, https://getbootstrap.com/docs/4.3/components/modal/
-For Maunny you will use similar array style for selections by user as similar to password generator, study arrays to depth and and you will be pushing arrays, storing info in local storage or variables
-Also you can create taskinator/task or task master to create schedules for people to trace their service schedule 
-Form Reset: https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
-Submit button: and add the following code in its place:
-var formEl = document.querySelector("#task-form");
-At the bottom of script.js, remove the code to add an event listener to buttonEl and add the following code in its place:
-formEl.addEventListener("submit", createTaskHandler);
-Maunny list dropdown
-<div class="form-group">
-  <select name="task-type">
-    <option value="" disabled selected>Pick a task type</option>
-    <option value="Print">Print</option>
-    <option value="Web">Web</option>
-    <option value="Mobile">Mobile</option>
-  </select>
-</div>
-To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the Lobster font. 
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
-You can use double image techniques as mentioned in email
-
-
-
-
-old planning to be fixed: 
-
-For whole website: Main 6 colours, main 3 on top
-
-Other 3 are background colours only 
-1. white
-2. light atric ice
-2. light aquamarine 
-
- 
-
-LOGO:
-
-Modern fonts
-
-1. LOGO https://visme.co/blog/modern-fonts/     ‘Kayak’
- 
-
-2. For logo and some writing, Maunny century gothic
-
- 
-
-3. For major writing 
-
-Maunny Halvetica 
-
-
-HERE 
-
-https://www.logaster.com/blog/how-to-choose-font-for-logo/
-
-use tips from peter, see videos and check search
-
- 
-
-https://www.google.com/search?q=how+to+choose+fonts+for+logo&rlz=1C5CHFA_enCA860CA860&oq=how+to+choose+fonts+for+logo&aqs=chrome..69i57.12276j0j7&sourceid=chrome&ie=UTF-8
-
-Important changes: 
-
- 
-
-Automotive Web Solutions
-
-
-
-https://800response.com/lp/generate-leads-with-vanity-800-numbers/?gclid=EAIaIQobChMIucKUqrPb7AIVCZSzCh0wnQg9EAAYAyAAEgLCH_D_BwE 
-
-
-type "how to get 1800 number" on google 
-
- 
-
-https://www.youtube.com/results?search_query=how+to+choose+fonts+for+logo
-
-
-https://www.youtube.com/results?search_query=how+to+choose+colour+theme+for+website
-
- 
-
-Maunny makes money
-
- 
-
-modern millionaires (check google) for marketing tip
-
-Small logo in sextagon
-
-
-
-
-
-Other two pages 3 sections each, one for credit app (payment calculator) save time if not sure be approved (1 to 1 with finance manager), and one for trade or sell in vehicle
-
-Through Maunny’s club: (Main target is to get people into this club)
-
- 
-
-Main corporation Maunny Inc., copyrights and tm 
-
-Actual wording: ‘Maunny’s Automotive Club’ 
-
-HERE
-
--->
-
- 
