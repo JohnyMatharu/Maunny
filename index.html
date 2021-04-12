@@ -29,12 +29,23 @@
     
     
     <nav class = "nav-extended">
+<<<<<<< HEAD
       <div class="nav-wrapper">
         <a class="brand-logo">The Maunny's Automotive Club</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#lead-generation">Search a Vehicle</a></li>
           <li><a href="#auto-finance">Financing a Vehicle</a></li>
         </ul>
+=======
+      <div class="nav-wrapper row">
+        <a class="brand-logo left">The Maunny's Automotive Club</a>
+        <div>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="lead-generation">Search a Vehicle</a></li>
+            <li><a href="#auto-finance">Financing a Vehicle</a></li>
+          </ul>
+        </div>
+>>>>>>> 03f79166aedd02949b74c73a6b8664d466fe35d0
       </div>
     </nav>
     
@@ -45,7 +56,7 @@
 
     <div class = "row inquiry">
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-     <div class = " col s6">
+     <div class = " col s12 l6">
      <!-- this is left div beg -->
       <form class ="left-align" id="search">
         <label for="cars">Year:</label>
@@ -176,13 +187,15 @@
         <br>
         <button class = "btn" id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
       </form>
+
+      <br><br>
     </div>
   <!-- this is end of left div -->
 
 
 <!-- <div class = "carInfo"> -->
 
-    <div class = "carPictures col s6 ">
+    <div class = "carPictures col s12 l6">
     <!-- this is right div of container div  -->
       <div class = "imageDisplay ">
         <img id = "carDisplay"/> 
@@ -193,62 +206,63 @@
       </div>
 <!-- this is end of car Pictures div -->
     </div>
-
-
-
   </div>
 </div>
 <!-- this is parent boundary div for both left and right div ending i.e. flex container-->
 <div class = "container center-align">
-  
+    <div class = "heading "><h1>Select vehicle</h1></div>
+    <div class = "row inquiry">
+    <form class = "interest left-align col s12 l6 offset-l3" id = "interest">
     
-    
+<<<<<<< HEAD
     <div id="auto-finance" class = "heading "><h1 class="">Select vehicle</h1></div>
     <form class = "interest left-align" id = "interest">
     <div class="">
+=======
+>>>>>>> 03f79166aedd02949b74c73a6b8664d466fe35d0
       <div class="">
-      <label for="customer" class="">Stock number</label>
+      <label for="customer" class="left-align">Stock number</label>
       <input type = "text" class="" id = "stockNumber"></input>
       </div>
-    </div>
-    <div class="">
+    
+    
       <div class="">
         <label for="customer" class="">Your name</label>
         <input type = "text" class="" id = "yourName"></input>
       </div>
-    </div>
-    <div class="">
+    
+    
       <div class="">
-        <label class="" for="customer">Phone and/or email</label>
-        <input type = "text" class="" id="yourPhoneEmail"></input>
+        <label for="customer">Email</label>
+        <input type = "email" id="yourPhoneEmail"></input>
       </div>
-    </div>
-    <br>
-    <button type="submit" name="submit" value="submit" class="btn">Submit</button>
-  </form>
+    
+      <br>
+      <button type="submit" name="submit" value="submit" class="btn">Submit</button>
+    </form>
+  </div>
 </div>
 
 
-
 <div class = "container center-align">
-        <div class = "heading "><h1 class="">Payment Calculator</h1></div>
-
-        <form class = "interest left-align" id = "payment">
+        <div class = "heading "><h1>Payment Calculator</h1></div>
+        <div class = "row inquiry">
+        <form class = "interest left-align col s12 l6 offset-l3" id = "payment">
             
-            <div class="">
-                <div class="">
+            
+                <div>
                     <label class="" for="v-price">Vehicle Price ($): </label>
                     <input type="text" class="" id="v-price">
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="" for="v-down">Down Payment ($): </label>
                     <input type="text" class="" id="v-down">
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="m-auto w-100" for="v-interest">Interest Rate (%): </label>
                     <select class="" id="v-interest">
                         <option value="0.2799">27.99%</option>
@@ -256,19 +270,19 @@
                         <option value="0.0099">0.99%</option>
                     </select>
                   </div>
-            </div>
-            <div class="">
-                <div class="">
+            
+            
+                <div>
                     <label class="" for="v-interval">Chose payment interval</label>
                     <select class=" " id="v-interval">
                         <option value="4">Weekly</option>
                         <option value="2">Bi-Monthly</option>
                         <option value="1">Monthly</option>
                     </select>
-                </div> 
-            </div>
-            <div class="">
-                <div class="">
+                </div>
+            
+            
+                <div>
                     <label class="" for="v-length">Chose Loan Length</label>
                     <select class="" id="v-length">
                         <option value="72">72</option>
@@ -276,14 +290,15 @@
                   
                     </select>
                 </div> 
-            </div>
+            
             <br>
             <button type="submit" class="btn ">Submit</button>
             
             <h3 class= "" id = "paymentValue"></h3>
             <p class= ""id = "feeTaxes"></p>
         </div>
-          </form>
+        </form>
+        </div>
 
 </div>
 
