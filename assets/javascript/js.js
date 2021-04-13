@@ -516,7 +516,32 @@ var displayPersonalInfo = function(personalInfo){
             inputModalEl.style.display = "none";
         }
     );
-
+    function carNewsLine(){
+        //dc1ef32d8de8fa36fec90c9ca831cc98
+            var carNews ="https://gnews.io/api/v4/search?token=2c96754f90b2d1e8c9d15be43513a089&q=cars";
+             console.log(carNews);
+              fetch(carNews).then(response => response.json()) 
+                .then(data => {
+                console.log(data);
+                
+                document.getElementById("headLine1").innerHTML = data.articles[0].title;
+                document.getElementById("headLine2").innerHTML = data.articles[1].title;
+                document.getElementById("headLine3").innerHTML = data.articles[2].title;
+                document.getElementById("headLine4").innerHTML = data.articles[3].title;
+                document.getElementById("headLine5").innerHTML = data.articles[4].title;
+                document.getElementById("headLine6").innerHTML = data.articles[5].title;
+                document.getElementById("headLine7").innerHTML = data.articles[6].title;
+                document.getElementById("headLine8").innerHTML = data.articles[7].title;
+                document.getElementById("headLine9").innerHTML = data.articles[8].title;
+        
+                 //document.getElementById("temperature").innerHTML = "Temperature: " + data.main.temp;
+                // document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity;
+                // document.getElementById("windSpeed").innerHTML = "Wind Speed: " + data.wind.speed;
+                
+               }); 
+            };
+        
+    carNewsLine();
     loadPersonalInfo();
     
     

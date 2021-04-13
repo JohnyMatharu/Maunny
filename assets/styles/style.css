@@ -86,25 +86,26 @@ width: 62%;
 
 .interest 
   {  
-   margin:auto;
+    margin:auto;
     padding-left: 330px; 
     padding-right: 330px;  
     align-items: center;   
     justify-content: center;    
  }  
 
-/*.flexContainer
+.headLines
 {
-/* flex box parent */
- /*   display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    align-items: center; 
-    list-style: none; 
-    width: 100%; 
-/* light artic ice */
- /* background-color: #F2FFFA;  */
-/* light aquamarine */
+ /* light artic ice */
+ background-color: #F2FFFA; 
+ color: royalblue;
+font-size:xx-small;
+padding-left: 480px;
+padding-right: 480px;
+}
+.headLines h1
+{
+  color: black;
+}
 
 .carPictures
 {
