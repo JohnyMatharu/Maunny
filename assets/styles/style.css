@@ -9,7 +9,7 @@
 {
  
   background-image: url("../images/logo.png");
-  width: 18%; 
+  width: 21%; 
   height: 63px;
   background-size: cover;
   background-size: 66px;                      /* <------ */
@@ -23,7 +23,7 @@
 {
  
  
-  width: 18%; 
+  width: 21%; 
   height: 51px;
   display: block;
   margin-left: auto;
@@ -53,7 +53,7 @@
    
 } 
 .menu2 {
-    width: 82%;
+    width: 79%;
     font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Sans', Arial;
     background-color: white;
     justify-content: space-between;
@@ -63,8 +63,8 @@
     position: sticky;
     top: 0;
     height: 63px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 21px;
+    padding-bottom: 15px;
     padding-left:150px;
     padding-right:150px;
     /* z-index: 1; */
