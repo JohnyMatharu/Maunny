@@ -8,7 +8,7 @@
 #logoSize
 {
  
-  background-image: url("../images/logo.png");
+  /* background-image: url("../images/logo.png"); */
   width: 21%; 
   height: 63px;
   background-size: cover;
@@ -23,14 +23,16 @@
 {
  
  
-  width: 21%; 
-  height: 51px;
+  width: 36%; 
+  height: 66px;
   display: block;
+ margin-top: 3px;
   margin-left: auto;
   margin-right: auto;
-  width: 12%;
-  padding-top: 12px;
- padding-left: 1px;
+  /* width: 12%; */
+   /* padding-top: 6px;  */
+   padding-bottom: 6px; */
+ padding-left: 2px;
   align-content: center; 
   
   /* padding-bottom: 15px; */
