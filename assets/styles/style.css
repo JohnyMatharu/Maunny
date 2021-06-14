@@ -9,7 +9,7 @@
 {
  
   /* background-image: url("../images/logo.png"); */
-  width: 21%; 
+  width: 23%; 
   height: 63px;
   background-size: cover;
   background-size: 66px;                      /* <------ */
@@ -55,7 +55,7 @@
    
 } 
 .menu2 {
-    width: 79%;
+    width: 77%;
     font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Sans', Arial;
     background-color: white;
     justify-content: space-between;
@@ -103,7 +103,7 @@ display: flex;
  align-items: center;  
  list-style: none;  
 
- padding-left: 15px;  
+ padding-left: 6px;  
  padding-right: 15px;
  
  /* font-size: 18px; */ 
@@ -128,8 +128,8 @@ display: flex;
   height: 699px;
   background-size: cover;
   background-position: center;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 74px;
+  margin-right: 74px;
                      /* <------ */
  
  
