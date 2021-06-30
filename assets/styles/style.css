@@ -109,16 +109,10 @@ display: flex;
  /* font-size: 18px; */ 
   }  
 
-/* .navigation */
-/* { */
-/* display: flex;  */
-/* flex-wrap: wrap;  */
-/* justify-content: space-between;  */
-/* align-items: center;  */
-/* list-style: none;  */
-/* padding-left: 60px;   */
-/* padding-right: 60px;   */
-/* } */
+#buttonClr
+{
+  background-color: aquamarine;
+}
 
 .landingPage
 {
@@ -131,9 +125,22 @@ display: flex;
   margin-left: 74px;
   margin-right: 74px;
                      /* <------ */
- 
- 
 }
+
+.vehicleSearch
+{
+  height: 699px;
+}
+
+.row-inquiry
+{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 510px;
+  padding-right: 510px; 
+}
+
+
 .container {
     margin: auto;
     width: 100%;
