@@ -21,8 +21,6 @@
 
 #logo
 {
- 
- 
   width: 36%; 
   height: 66px;
   display: block;
@@ -40,6 +38,8 @@
 /* old code starts */
 .heading-text {
     justify-content:center;
+    padding-left: 42px; 
+    padding-right: 36px;
 }
 
 .menu1 
@@ -91,7 +91,7 @@ header nav ul {
     justify-content: space-between; 
     align-items: center; 
     list-style: none; 
-    padding-left: 15px; 
+    padding-left: .1px; 
     padding-right: 15px;  
      } 
 
@@ -111,15 +111,15 @@ display: flex;
 
 #buttonClr
 {
-  
   border: none;
   color: white;
-  padding: 1.85px 2px;
+  padding-top: 2.4px;
+  padding-bottom: 2.4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  background-color: aquamarine;
+  background-color:#4f9cc8;
 }
 
 .landingPage
@@ -133,6 +133,26 @@ display: flex;
   margin-left: 74px;
   margin-right: 74px;
                      /* <------ */
+}
+
+#search
+{
+  align-content: center;
+  padding-left: 51px;
+  padding-right: 45px;
+  padding-bottom: 4.5px;
+}
+#search2
+{
+  align-content: center;
+  padding-left: 79px;
+  padding-right: 60px;
+}
+#search3
+{
+  align-content: center;
+  padding-left: 131px;
+  padding-right: 118px;
 }
 
 .vehicleSearch
@@ -159,11 +179,12 @@ display: flex;
   background-color:#48a37e;
   border: none;
   color: white;
-  padding: 1.85px 2px;
+  padding: 3px 6px 3px 6px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 8px;
   
 }
 
@@ -171,8 +192,8 @@ display: flex;
 
 .row-inquiry
 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 93px;
+  padding-bottom: 145px;
   padding-left: 510px;
   padding-right: 510px; 
   
@@ -234,6 +255,9 @@ padding-right: 480px;
   background-color:  #90BED4;
   border: 1px solid #BFBFBF;
   box-shadow: 10px 10px 8px #888888;
+  justify-content: center;
+  margin-left: 15px;
+
   /* box-shadow: 10px 10px 5px #aaaaaa; */
 }
 
