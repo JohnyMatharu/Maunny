@@ -145,13 +145,13 @@ display: flex;
 #search2
 {
   align-content: center;
-  padding-left: 79px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 36px;
 }
 #search3
 {
   align-content: center;
-  padding-left: 131px;
+  padding-left: 126px;
   padding-right: 118px;
 }
 
@@ -179,7 +179,7 @@ display: flex;
   background-color:#48a37e;
   border: none;
   color: white;
-  padding: 3px 6px 3px 6px ;
+  padding: 6px 9px 6px 9px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -261,7 +261,10 @@ padding-right: 480px;
   /* box-shadow: 10px 10px 5px #aaaaaa; */
 }
 
-
+#stockPosition 
+{
+  padding-left: 21px;
+}
 
 
 
