@@ -151,7 +151,7 @@ display: flex;
 #search3
 {
   align-content: center;
-  padding-left: 126px;
+  padding-left: 122px;
   padding-right: 118px;
 }
 
@@ -199,12 +199,14 @@ display: flex;
   
 }
 
+/* add info here equal length height-start */
 
 .container {
     margin: auto;
     width: 100%;
-    background-color: #eceff8;
-    padding: 50px;
+    height: 349.50px;
+    align-content: center;
+  
  
 /* light artic ice */
  /* background-color: #F2FFFA;  */
@@ -213,9 +215,29 @@ display: flex;
 
 .heading
 {    
-    align-items: center; 
+ padding-left: 30%;
+ padding-right: 30%;
+  align-items: center; 
     justify-content: center;  
 }
+
+#head1
+
+  {    
+    padding-left: 35%;
+    padding-right: 32%;
+     align-items: center; 
+       justify-content: center;  
+   }
+   #head2
+
+   {    
+     padding-left: 27%;
+     padding-right: 25%;
+      align-items: center; 
+        justify-content: center;  
+    }
+
 
 .inquiry 
 {
@@ -227,15 +249,54 @@ width: 62%;
     margin:100px;
 }
 
-.interest 
-  {  
-    margin:auto;
-    padding-left: 330px; 
-    padding-right: 330px;  
-    align-items: center;   
-    justify-content: center;    
- }  
+#interest1 
+  { 
+align-items: center;   
+justify-content: center;  
+padding-left: 45%;
+padding-right: 48%;
+width: 100%;
+ }
+ #interest2 
+  { 
+align-items: center;   
+justify-content: center;  
+padding-left: 45%;
+padding-right: 48%;
+width: 100%;
+ }
+ #interest3 
+  { 
+align-items: center;   
+justify-content: center;  
+padding-left: 45%;
+padding-right: 48%;
+width: 100%;
+ }
+ #interest4
+  { 
+align-items: center;   
+justify-content: center;  
+padding-left: 45%;
+padding-right: 48%;
+width: 100%;
+ }
 
+
+
+
+#payment
+{ 
+    align-items: center;   
+    justify-content: center;  
+    padding-left: 45%;
+    padding-right: 45%;
+    width: 100%;
+     
+}
+
+
+ 
 .headLines
 {
  /* light artic ice */
@@ -297,14 +358,18 @@ img {
   }
 
 
-.stockDisplay
+#stockDisplay
 
 {
+  padding-right: 2px;
     height:90px;
+    
+
 }
 #payment-calc{
     padding: auto 100px auto;
 }
+/* all models need to be checked */
 .my-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
