@@ -251,39 +251,53 @@ width: 62%;
 
 #interest1 
   { 
+    
 align-items: center;   
 justify-content: center;  
-padding-left: 45%;
-padding-right: 48%;
+padding-left: 42%;
+padding-right: 39%;
 width: 100%;
  }
+
  #interest2 
   { 
 align-items: center;   
 justify-content: center;  
-padding-left: 45%;
-padding-right: 48%;
+padding-left: 42.5%;
+padding-right: 40.5%;
 width: 100%;
  }
  #interest3 
   { 
 align-items: center;   
 justify-content: center;  
-padding-left: 45%;
-padding-right: 48%;
+padding-left: 43.5%;
+padding-right: 42.5%;
 width: 100%;
  }
  #interest4
   { 
 align-items: center;   
 justify-content: center;  
-padding-left: 45%;
-padding-right: 48%;
+padding-left: 48.5%;
+padding-right: 48.5%;
 width: 100%;
  }
 
+ #stockNumber 
+ {
+  background-color: #D1D8E2;
+ }
 
+ #yourName 
+ {
+  background-color: #D1D8E2;
+ }
 
+ #yourPhoneEmail
+ {
+  background-color: #D1D8E2;
+ }
 
 #payment
 { 
