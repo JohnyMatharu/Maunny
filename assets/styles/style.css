@@ -29,7 +29,7 @@
   margin-right: auto;
   /* width: 12%; */
    /* padding-top: 6px;  */
-   padding-bottom: 6px; */
+   padding-bottom: 6px; 
  padding-left: 2px;
   align-content: center; 
   
@@ -127,7 +127,7 @@ display: flex;
 
   background-image: url("../images/car-2.jpeg"); 
   width: 90%; 
-  height: 699px;
+  height: 758px;
   background-size: cover;
   background-position: center;
   margin-left: 74px;
@@ -151,13 +151,13 @@ display: flex;
 #search3
 {
   align-content: center;
-  padding-left: 122px;
-  padding-right: 118px;
+  padding-left: 121.75px;
+  padding-right: 118.25px;
 }
 
-.vehicleSearch
+.vehicleSearch 
 {
-  height: 699px;
+  height: 758px;
 }
 
 #year 
@@ -204,7 +204,7 @@ display: flex;
 .container {
     margin: auto;
     width: 100%;
-    height: 349.50px;
+    height: 378px;
     align-content: center;
   
  
@@ -234,9 +234,36 @@ display: flex;
    {    
      padding-left: 27%;
      padding-right: 25%;
-      align-items: center; 
-        justify-content: center;  
+     align-items: center; 
+     justify-content: center;  
     }
+    #head3
+
+   {    
+     padding-left: 27%;
+     padding-right: 25%;
+     align-items: center; 
+     justify-content: center;  
+    }
+
+    /* check if centered both below */
+    #head4
+
+    {    
+      padding-left: 35%;
+    padding-right: 29%;
+      align-items: center; 
+      justify-content: center;  
+     }
+     #head5
+
+   {    
+    padding-left: 35%;
+    padding-right: 31%;
+     align-items: center; 
+     justify-content: center;  
+    }
+
 
 
 .inquiry 
@@ -279,8 +306,8 @@ width: 100%;
   { 
 align-items: center;   
 justify-content: center;  
-padding-left: 48.5%;
-padding-right: 48.5%;
+padding-left: 48.35%;
+padding-right: 48.65%;
 width: 100%;
  }
 
@@ -299,30 +326,65 @@ width: 100%;
   background-color: #D1D8E2;
  }
 
-#payment
-{ 
-    align-items: center;   
+#v-price
+{
+  background-color: #D1D8E2;
+}
+#v-down
+{
+  background-color: #D1D8E2;
+}
+#v-interest
+{
+  background-color: #D1D8E2;
+}
+#v-interval
+{
+  background-color: #D1D8E2;
+}
+#v-length
+{
+  background-color: #D1D8E2;
+}
+#payment1
+{
+  align-items: center;   
     justify-content: center;  
-    padding-left: 45%;
-    padding-right: 45%;
+    padding-left: 40.92%;
+    padding-right: 39.02%;
     width: 100%;
-     
 }
-
-
- 
-.headLines
+#payment2
 {
- /* light artic ice */
- background-color: #F2FFFA; 
- color: royalblue;
-font-size:xx-small;
-padding-left: 480px;
-padding-right: 480px;
+  align-items: center;   
+    justify-content: center;  
+    padding-left: 40.52%;
+    padding-right: 39.42%;
+    width: 100%;
 }
-.headLines h1
+#payment3
 {
-  color: black;
+  align-items: center;   
+    justify-content: center;  
+    padding-left: 43.92%;
+    padding-right: 36.02%;
+    width: 100%;
+}
+#payment4
+{
+  align-items: center;   
+    justify-content: center;  
+    padding-left: 42.02%;
+    padding-right: 39.82%;
+    width: 100%;
+}
+#payment5
+{
+  align-items: center;   
+    justify-content: center;  
+    padding-left: 44.72%;
+    padding-right: 35.42%;
+    width: 100%;
 }
 
 #carDisplay
@@ -338,10 +400,8 @@ padding-right: 480px;
 
 #stockPosition 
 {
-  padding-left: 21px;
+  padding-left: 22.65px;
 }
-
-
 
 .carPictures
 {
@@ -406,6 +466,16 @@ img {
     width: 80%; /* Could be more or less, depending on screen size */
   }
   
+  #club 
+  {
+    height: 758px;
+  }
+  #mechanic 
+  {
+    height: 758px;
+  }
+  
+
   /* The Close Button */
   .close {
     color: #aaa;
@@ -427,6 +497,7 @@ img {
 
 .contact {
   background: white;
+  height: 758px;
 }
 
 .contact h2 {

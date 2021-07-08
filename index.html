@@ -192,7 +192,7 @@
         </select>
         <br>
      <br>
-     <br>
+  
         </div>
         <div id = "search3">
         <button class = "btn" id = "submitBtn" type="submit" name="submit" value="submit">Submit</button>
@@ -214,6 +214,7 @@
     <!-- insert place holder div -->
       </div>
       <div id = "stockPosition">
+        <br>
         <label id = "stockDisplay">Stock Number</label>
     <!-- this is for stock number use in js to display stock, may have to use flex box #, make sure bottom margin of page fits -->
       </div>
@@ -222,7 +223,7 @@
   </div>
 </div>
 <!-- this is parent boundary div for both left and right div ending i.e. flex container-->
-<div class = "container center-align">
+<div class = "container">
     <div class = "heading"><h1 id ="head1">Select Vehicle</h1></div>
     <div>
     <form>
@@ -253,25 +254,25 @@
 </div>
 
 
-<div class = "container center-align">
+<div class = "container">
         <div class = "heading " id = "auto-finance"><h1 id ="head2">Payment Calculator</h1></div>
         <div>
-        <form id = "payment">
+        <form>
             
             
-                <div>
+                <div id ="payment1">
                     <label class="" for="v-price">Vehicle Price ($): </label>
                     <input type="text" class="" id="v-price">
                   </div>
             
             
-                <div>
+                <div id ="payment2">
                     <label class="" for="v-down">Down Payment ($): </label>
                     <input type="text" class="" id="v-down">
                   </div>
             
             
-                <div>
+                <div id ="payment3"> 
                     <label class="m-auto w-100" for="v-interest">Interest Rate (%): </label>
                     <select class="" id="v-interest">
                         <option value="0.2799">27.99%</option>
@@ -281,7 +282,7 @@
                   </div>
             
             
-                <div>
+                <div id ="payment4">
                     <label class="" for="v-interval">Chose payment interval</label>
                     <select class=" " id="v-interval">
                         <option value="4">Weekly</option>
@@ -291,7 +292,7 @@
                 </div>
             
             
-                <div>
+                <div id ="payment5">
                     <label class="" for="v-length">Chose Loan Length</label>
                     <select class="" id="v-length">
                         <option value="72">72</option>
@@ -301,10 +302,12 @@
                 </div> 
             
             <br>
-            <button type="submit" class="btn ">Submit</button>
+            <div id = "interest4">
+            <button type="submit" id = "submitBtn">Submit</button>
             
             <h3 class= "" id = "paymentValue"></h3>
             <p class= ""id = "feeTaxes"></p>
+          </div>
         </div>
         </form>
         </div>
@@ -347,32 +350,18 @@
    
 </div>
 </section>
-<!-- this is for headlines -->
-<section class ="headLines">
-  <h1>Top Headlines <i class="far fa-newspaper"></i></h1>
-  <br>
-  <br>
-<h6 id = "headLine1"></h6>
-
-<h6 id = "headLine2"></h6>
-
-<h6 id = "headLine3"></h6>
-
-<h6 id = "headLine4"></h6>
-
-<h6 id = "headLine5"></h6>
-
-<h6 id = "headLine6"></h6>
-
-<h6 id = "headLine7"></h6>
-
-<h6 id = "headLine8"></h6>
-
-<h6 id = "headLine9"></h6>
-
-<h6 id = "headLine10"></h6>
+<!-- new section start -->
+<section id = "club">
+  <div class = "heading">
+  <h1 id = "head4">The Maunny's Club</h1>
+</div>
 </section>
-<!-- headlines end here -->
+<section id = "mechanic">
+  <div class = "heading">
+  <h1 id = "head5">Mechanic Window</h1>
+</div>
+</section>
+
 <section id="reach-out" class="contact">
   <div class="flex-row">
     <h2 class="section-title secondary-border">
