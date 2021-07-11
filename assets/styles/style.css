@@ -250,20 +250,20 @@ display: flex;
     #head4
 
     {    
-      padding-left: 35%;
-    padding-right: 29%;
+      color:blueviolet; 
+      width: 70%;
+      font-weight: bold;
+      font-size: 30px;
+     }
+ 
+    #head5
+
+    {    
+     padding-left: 35%;
+     padding-right: 31%;
       align-items: center; 
       justify-content: center;  
      }
-     #head5
-
-   {    
-    padding-left: 35%;
-    padding-right: 31%;
-     align-items: center; 
-     justify-content: center;  
-    }
-
 
 
 .inquiry 
@@ -306,8 +306,8 @@ width: 100%;
   { 
 align-items: center;   
 justify-content: center;  
-padding-left: 48.35%;
-padding-right: 48.65%;
+padding-left: 48.15%;
+padding-right: 48.85%;
 width: 100%;
  }
 
@@ -469,6 +469,21 @@ img {
   #club 
   {
     height: 758px;
+  }
+
+  #displayGallery
+  {
+    
+      height: 648px;
+      background-image: url("../images/formulae-one.jpeg"); 
+   margin-left: 20%;
+      width: 25%;
+      height: 100%;
+      padding-left: 30%;
+      padding-right: 30%;
+      background-size: cover;
+      background-position: center;
+
   }
   #mechanic 
   {
