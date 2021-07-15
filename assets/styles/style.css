@@ -248,16 +248,17 @@ display: flex;
 
     /* check if centered both below */
     #head4
-
-    {    
+    {         
       color:blueviolet; 
-      width: 70%;
       font-weight: bold;
       font-size: 30px;
+      height: 300px;
+     width: 100%;
+
      }
+
  
     #head5
-
     {    
      padding-left: 35%;
      padding-right: 31%;
@@ -473,23 +474,32 @@ img {
 
   #displayGallery
   {
-    
       height: 648px;
       background-image: url("../images/formulae-one.jpeg"); 
-   margin-left: 20%;
-      width: 25%;
+      margin-left: 25%;
+      margin-right: 25%;
+      width: 50%;
       height: 100%;
-      padding-left: 30%;
-      padding-right: 30%;
+      padding-left: 9%;
+      padding-right: 9%;
       background-size: cover;
-      background-position: center;
-
   }
   #mechanic 
   {
     height: 758px;
   }
   
+  #window
+{
+  width: 100%;    
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    height: 63px;
+}
 
   /* The Close Button */
   .close {
