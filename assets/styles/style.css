@@ -492,14 +492,41 @@ img {
   #window
 {
   width: 100%;    
+  height: 658px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: sticky;
     top: 0;
-    height: 63px;
+   border-top-width: 3px;
+   border-color: #000000;
+   background-color: #eceff8;
+    
 }
+
+#padding-left 
+{
+  height: 658px;
+  width: 15%;
+  background-color:#9DBED4;
+}
+
+#toolSubmit 
+{
+  height: 658px;
+  width: 15%;
+  background-color:#9DBED4;
+}
+
+#padding-right
+{
+  height: 658px;
+  width: 15%;
+  background-color:#9DBED4;
+}
+
+
 
   /* The Close Button */
   .close {
