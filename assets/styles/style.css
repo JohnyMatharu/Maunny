@@ -233,7 +233,7 @@ display: flex;
 
    {    
      padding-left: 27%;
-     padding-right: 25%;
+     padding-right: 24.5%;
      align-items: center; 
      justify-content: center;  
     }
@@ -483,7 +483,10 @@ img {
       padding-left: 9%;
       padding-right: 9%;
       background-size: cover;
+      border: none;
+      overflow: scroll;
   }
+  
   #mechanic 
   {
     height: 758px;
@@ -504,6 +507,100 @@ img {
    background-color: #eceff8;
     
 }
+#flex {
+  width: 100%;
+height: 217px;
+justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+#flex1 
+{
+  width: 50%;
+  background-color: #4b4836;
+  opacity: 0.5;
+}
+
+#flex2
+{
+  width: 50%;
+  background-color: #4f9cc8;
+  opacity: 0.5;
+}
+#flex3
+{
+  width: 50%;
+  background-color: royalblue;
+  opacity: 0.5;
+}
+#flex4
+{
+  width: 50%;
+  background-color: blueviolet;
+  opacity: 0.5;
+}
+#flex5
+{
+  width: 50%;
+  background-color: orchid;
+  opacity: 0.5;
+}
+#flex6
+{
+  width: 50%;
+  background-color: coral;
+  opacity: 0.5;
+}
+#flex7
+{
+  width: 50%;
+  background-color: azure;
+  opacity: 0.5;
+}
+#flex8
+{
+  width: 50%;
+  background-color: paleturquoise;
+  opacity: 0.5;
+}
+#flex9
+{
+  width: 50%;
+  background-color: turquoise;
+  opacity: 0.5;
+}
+#flex10
+{
+  width: 50%;
+  background-color: blue;
+  opacity: 0.5;
+}
+#flex11
+{
+  width: 50%;
+  background-color: beige;
+  opacity: 0.5;
+}
+#flex12
+{
+  width: 50%;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
 
 #padding-left 
 {
@@ -511,27 +608,6 @@ img {
   width: 15%;
   background-color:#9DBED4;
 }
-
-#window1
-{
-  border: none;
-  padding: 5px;
-  font: 24px/36px sans-serif;
-  width: 27.50%;
-  height: 100%;
-  overflow: scroll;
-  }
-  
-  #window2
-  {
-    border: none;
-    padding: 5px;
-    font: 24px/36px sans-serif;
-    width: 27.50%;
-    height: 100%;
-    overflow: scroll;
-    }
-
 
 
   ::-webkit-scrollbar {
