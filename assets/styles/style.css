@@ -480,8 +480,6 @@ img {
       margin-right: 25%;
       width: 50%;
       height: 100%;
-      padding-left: 9%;
-      padding-right: 9%;
       background-size: cover;
       border: none;
       overflow: scroll;
@@ -492,6 +490,13 @@ img {
     height: 758px;
   }
   
+#sizeButton
+{
+width: 150px;
+height: 45px;
+
+}
+
   #window
 {
   width: 100%;    
@@ -628,9 +633,17 @@ justify-content: space-between;
 
 #toolSubmit 
 {
+
+/* add flex here */
+
   height: 658px;
   width: 15%;
   background-color:#9DBED4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
 
 #padding-right
