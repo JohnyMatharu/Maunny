@@ -67,11 +67,10 @@
     height: 63px;
     padding-top: 21px;
     padding-bottom: 15px;
-    padding-left:150px;
-    padding-right:150px;
+    padding-left:282px;
+    padding-right:282px;
     /* z-index: 1; */
 }
-
 
     
     /* this will give a different colour to logo */
@@ -109,31 +108,35 @@ display: flex;
  /* font-size: 18px; */ 
   }  
 
-#buttonClr
-{
-  border: none;
-  color: white;
-  padding-top: 2.4px;
-  padding-bottom: 2.4px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  background-color:#4f9cc8;
-}
 
-.landingPage
-{
+/*  */
+/* #buttonClr */
+/* { */
+  /* padding-right: 35px; */
+  /* padding-left: 35px; */
+  /* border: none; */
+  /* color: white; */
+  /* padding-top: 2.4px; */
+  /* padding-bottom: 2.4px; */
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  /* font-size: 16px; */
+  /* background-color:#4f9cc8; */
+/* } */
 
-  background-image: url("../images/car-2.jpeg"); 
-  width: 90%; 
-  height: 758px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 74px;
-  margin-right: 74px;
+/* .landingPage */
+/* { */
+
+  /* background-image: url("../images/car-2.jpeg");  */
+  /* width: 90%;  */
+  /* height: 758px; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* margin-left: 74px; */
+  /* margin-right: 74px; */
                      /* <------ */
-}
+/* } */
 
 #search
 {
@@ -492,10 +495,17 @@ img {
   
 #sizeButton
 {
-width: 150px;
+width: 300px;
 height: 45px;
-
+color: blueviolet;
+border-radius: 12px;
 }
+
+#bold{
+font-size: large;
+font-weight: bolder;
+}
+
 
   #window
 {
@@ -509,7 +519,9 @@ height: 45px;
     top: 0;
    border-top-width: 3px;
    border-color: #000000;
-   background-color: #eceff8;
+   
+ 
+
     
 }
 #flex {
@@ -610,8 +622,8 @@ justify-content: space-between;
 #padding-left 
 {
   height: 658px;
-  width: 15%;
-  background-color:#9DBED4;
+  width: 33.33%;
+  background-color: #eceff8;
 }
 
 
@@ -637,7 +649,7 @@ justify-content: space-between;
 /* add flex here */
 
   height: 658px;
-  width: 15%;
+  width: 33.33%;
   background-color:#9DBED4;
   display: flex;
   justify-content: space-around;
@@ -649,10 +661,21 @@ justify-content: space-between;
 #padding-right
 {
   height: 658px;
-  width: 15%;
+  width: 33.33%;
   background-color:#9DBED4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
+#frame{
 
+  height: 658px;
+  width: 100%;
+
+
+}
 
 
   /* The Close Button */
@@ -693,6 +716,7 @@ justify-content: space-between;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: royalblue;
 }
 
 .contact-info > * {
@@ -708,21 +732,17 @@ justify-content: space-between;
   color: #4b4836;
 }
 
-.contact-info h3 {
-  color: #000000;
-  font-size: 32px;
-}
+
 
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
+  color: blueviolet;
 }
 
-.contact-info a {
-  color: #000000;
-}
+
 
 /* Footer */
 footer {
