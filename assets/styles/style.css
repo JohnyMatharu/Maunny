@@ -40,6 +40,7 @@
     justify-content:center;
     padding-left: 42px; 
     padding-right: 36px;
+    color: orchid;
 }
 
 .menu1 
@@ -230,7 +231,8 @@ display: flex;
     padding-left: 35%;
     padding-right: 32%;
      align-items: center; 
-       justify-content: center;  
+       justify-content: center; 
+       color: orchid; 
    }
    #head2
 
@@ -238,7 +240,8 @@ display: flex;
      padding-left: 27%;
      padding-right: 24.5%;
      align-items: center; 
-     justify-content: center;  
+     justify-content: center; 
+     color: orchid; 
     }
     #head3
 
@@ -267,6 +270,7 @@ display: flex;
      padding-right: 31%;
       align-items: center; 
       justify-content: center;  
+      color: orchid;
      }
 
 
@@ -737,9 +741,11 @@ justify-content: space-between;
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: large;
+  font-weight: bolder;
   font-style: normal;
   color: blueviolet;
+
 }
 
 
