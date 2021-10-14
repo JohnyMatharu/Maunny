@@ -31,7 +31,7 @@ User can run this app starting with first section, i.e. search the name of a car
 - Danyal Khanzada
 
 # Published Website:
-https://johnnymatharu.github.io/Maunny/
+https://johnymatharu.github.io/Maunny/
 
 # License
 Under the MIT license, this material is free to modify and distribute for commercial or private use. 
