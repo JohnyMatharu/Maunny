@@ -4,7 +4,8 @@
 
 var negativeModalEl = document.getElementById("modalNegCheck");
 var inputModalEl = document.getElementById("modalInputCheck");
-var priceModalEl = document.getElementById("modalInputCheck");
+var priceModalEl = document.getElementById("modalPriceCheck");
+var saveInfoEl = document.getElementById("modalInfoSave");
 var personalInfo = {};
 
 var loadPersonalInfo = function(){
@@ -492,10 +493,12 @@ var displayPersonalInfo = function(personalInfo){
         var yourPhoneEmail = $("#yourPhoneEmail").val();
         if (stockNumber.isNaN){inputModalEl.style.display = "block"; return;
         } else {
+            
             personalInfo.yourName = yourName;
             personalInfo.stockNumber = stockNumber;
             personalInfo.yourEmail = yourPhoneEmail;
             savePersonalInfo();
+            saveInfoEl.style.display = "block"; return;
             //tip 1: bring a modal here and say we have recieved your request, some one will get back to you in 60 minutes, we have your information and it could be seen next time you use it
         }
     });
@@ -507,7 +510,6 @@ var displayPersonalInfo = function(personalInfo){
         var vInterval = $("#v-interval").val();
         var vLength = $("#v-length").val();
         calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);   
-        //tip 2: fix the function display div for payment calculation for size and margins etc. this is last part to be fixed 
     });
     
     $(".close").click( 
@@ -515,6 +517,7 @@ var displayPersonalInfo = function(personalInfo){
             negativeModalEl.style.display = "none";
             priceModalEl.style.display = "none";
             inputModalEl.style.display = "none";
+            saveInfoEl.style.display = "none";
         }
     );
     function carNewsLine(){
