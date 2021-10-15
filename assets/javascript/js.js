@@ -497,6 +497,7 @@ var displayPersonalInfo = function(personalInfo){
             personalInfo.stockNumber = stockNumber;
             personalInfo.yourEmail = yourPhoneEmail;
             savePersonalInfo();
+            //tip 1: bring a modal here and say we have recieved your request, some one will get back to you in 60 minutes, we have your information and it could be seen next time you use it
         }
     });
     $("#payment").on("click","#submitBtn", function(event){
@@ -507,6 +508,7 @@ var displayPersonalInfo = function(personalInfo){
         var vInterval = $("#v-interval").val();
         var vLength = $("#v-length").val();
         calculatePayment(vPrice, vDown, vInterest, vInterval, vLength);   
+        //tip 2: fix the function display div for payment calculation for size and margins etc. this is last part to be fixed 
     });
     
     $(".close").click( 
