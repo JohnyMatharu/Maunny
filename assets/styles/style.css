@@ -145,6 +145,7 @@ display: flex;
   padding-left: 51px;
   padding-right: 45px;
   padding-bottom: 4.5px;
+  
 }
 #search2
 {
@@ -216,13 +217,17 @@ display: flex;
 }
 
 /* add info here equal length height-start */
+.container{
+  background-image: url("../images/car-1.jpeg");  
+  width: 100%;
+    height: 756px;
+}
 
-.container {
+.container1 {
     margin: auto;
     width: 100%;
     height: 378px;
     align-content: center;
-    background-image: url("../images/car-1.jpeg");
     background-size: cover;
                       /* <------ */
                       
@@ -236,7 +241,24 @@ display: flex;
 /* light aquamarine */
 }
 
+.container2 {
+  margin: auto;
+  width: 100%;
+  height: 378px;
+  align-content: center;
 
+  background-size: cover;
+                    /* <------ */
+                    
+  background-repeat:   no-repeat;
+  background-position: center center; 
+ 
+
+
+/* light artic ice */
+/* background-color: #F2FFFA;  */
+/* light aquamarine */
+}
 
 
 .heading
@@ -451,13 +473,20 @@ img {
 
   }
 
+  #paymentValue
+  {
+    color: grey;
+    width: 100%;
+    font-family: sans-serif;
+  }
 
 #stockDisplay
 
 {
   padding-right: 2px;
     height:90px;
-    
+    font-family: sans-serif;
+    color: grey
 
 }
 #payment-calc{
@@ -546,6 +575,9 @@ img {
 }
 
 
+#space {
+height: 9px;
+}
 
 
 /* Footer */

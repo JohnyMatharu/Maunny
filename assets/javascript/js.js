@@ -445,8 +445,7 @@ var displayPersonalInfo = function(personalInfo){
     /////this is division line for payment calculator
     var displayPayment =function(price, string){
         var totalPrice = (price+600)*1.13;
-        $("#paymentValue").html("Your payment is: $"+totalPrice.toFixed(2)+string);
-        $("#feeTaxes").html(" incl. taxes and $600 administration, licensing, and fuel cost");
+        $("#paymentValue").html("$"+totalPrice.toFixed(2));
         //taxes + 600 admin, fuel, licensing fee
     }
     
