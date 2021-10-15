@@ -486,7 +486,7 @@ var displayPersonalInfo = function(personalInfo){
         //connect the function for local storage
     
     });
-    $("#interest").on("click",".btn", function(event){
+    $("#interest").on("click","#submitBtn", function(event){
         event.preventDefault();
         var stockNumber = $("#stockNumber").val();
         var yourName = $("#yourName").val();
@@ -499,7 +499,7 @@ var displayPersonalInfo = function(personalInfo){
             savePersonalInfo();
         }
     });
-    $("#payment").on("click",".btn", function(event){
+    $("#payment").on("click","#submitBtn", function(event){
         event.preventDefault();
         var vPrice = $("#v-price").val();
         var vDown = $("#v-down").val();

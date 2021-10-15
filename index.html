@@ -33,9 +33,9 @@
     <nav class="menu2">
           <div class = "navigation">
             <ul>
-              <li><a href="#club">Club</a></li>
-            <li><a href="#vehicle">Vehicle</a></li> 
-            <li><a href="#mechanic">Mechanic</a></li> 
+              <li><a href="#Search">Search</a></li>
+            <li><a href="#head1">Select</a></li> 
+            <li><a href="#head2">Finance</a></li> 
             
            
             <!-- <button id =buttonClr>Sign in</button> -->
@@ -45,121 +45,6 @@
           </div>
     </nav>
   </header>
-<!-- <section class="landingPage"> -->
-
-<!-- </section> -->
-
-<!-- old code starts -->
-<section id = "club">
-  <div id = "displayGallery" class = "hide">
-    
-    <div id = "flex">
-  
-  <!-- flex box start -->
-  
-      <div id = "flex1">
-  
-  </div>
-  
-  <div id = "flex2">
-  
-  </div>
-  
-  <!-- flex box end -->
-  
-    </div>
-    <!-- add all the divs here -->
-    
-    <div id = "flex">
-  
-      <!-- flex box start -->
-      
-          <div id = "flex3">
-      
-      </div>
-      
-      <div id = "flex4">
-      
-      </div>
-      
-      <!-- flex box end -->
-      
-        </div>
-        <!-- add all the divs here -->
-        <div id = "flex">
-  
-          <!-- flex box start -->
-          
-              <div id = "flex5">
-          
-          </div>
-          
-          <div id = "flex6">
-          
-          </div>
-          
-          <!-- flex box end -->
-          
-            </div>
-            <!-- add all the divs here -->
-            <div id = "flex">
-  
-              <!-- flex box start -->
-              
-                  <div id = "flex7">
-              
-              </div>
-              
-              <div id = "flex8">
-              
-              </div>
-              
-              <!-- flex box end -->
-              
-                </div>
-                <!-- add all the divs here -->
-                <div id = "flex">
-  
-                  <!-- flex box start -->
-                  
-                      <div id = "flex9">
-                  
-                  </div>
-                  
-                  <div id = "flex10">
-                  
-                  </div>
-                  
-                  <!-- flex box end -->
-                  
-                    </div>
-                    <!-- add all the divs here -->
-                    <div id = "flex">
-  
-                      <!-- flex box start -->
-                      
-                          <div id = "flex11">
-                      
-                      </div>
-                      
-                      <div id = "flex12">
-                      
-                      </div>
-                      
-                      <!-- flex box end -->
-                      
-                        </div>
-                        <!-- add all the divs here -->
-  
-    
-  
-  
-  </div>
-  </section>
-
-
-
-
 
 <!-- new section start -->
 
@@ -168,7 +53,7 @@
     
 
     <div class = "row-inquiry">
-      <h1 class="heading-text">Vehicle Search Inquiry</h1>
+      <h1 class="heading-text" id ="Search">Vehicle Search Inquiry</h1>
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
      <div class = " col s12 l6">
      <!-- this is left div beg -->
@@ -334,7 +219,7 @@
 <div class = "container">
     <div class = "heading"><h1 id ="head1">Select Vehicle</h1></div>
     <div>
-    <form>
+    <form id =interest>
     
       <div id="interest1">
       <label for="customer" class="left-align">Stock number</label>
@@ -365,7 +250,7 @@
 <div class = "container">
         <div class = "heading " id = "auto-finance"><h1 id ="head2">Payment Calculator</h1></div>
         <div>
-        <form>
+          <form class = "interest left-align col s12 l6 offset-l3" id = "payment">
             
             
                 <div id ="payment1">
@@ -461,78 +346,19 @@
 <!-- new section start -->
 
 
-
-
-
-
-<section id = "mechanic">
-  <div class = "heading">
-    <br>
-    <br>
-    <br>
-  <h1 id = "head5">Mechanic Window</h1>
-</div>
-<div id ="window">
-  
-  
-  
-  <div id ="padding-left">
-<section id="reach-out">
-  <div class="flex-row">
-    
-  </div>
-
-  <div class="contact-info">
-    <div>
-      
-     
-        
-
-      <address>
-        Address:<br/>
-        27 King's College Cir<br/>
-        Toronto, ON <br/>
-        MST0B3<br/>
-        P: +1 (647) 989 8989<br/>
-        Ext: 501-509<br/>
-        E: <a href="mailto:maunny@maunyauto.com">maunny@maunyauto.com</a>
-      </address>
-      <br/> 
-      <br/>
-      <br/>
-     
-    
-    
-    </section>
-
-</div>     
-  <div id ="toolSubmit">
-   <button type="button" id ="sizeButton" class="btn btn-primary btn-lg"><h3 id ="bold">Post</h3></button>
-  </div> 
-  
-  <div id ="padding-right">
-    <iframe id = "frame"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-    frameborder="0" style="border:0" allowfullscreen>
-  </iframe>
- 
-  </div> </div>
-</section>
-
-
- 
-
-
-
-
-
-
-
-
-
-
     <footer>
       <h2></h2>
+      <div><address>
+        Address: 27 King's College Cir, Toronto, ON, MST0B3<br/>
+        P: +1 (647) 989 8989, Ext: 501-509<br/>
+        E: <a href="mailto:maunny@maunyauto.com">maunny@maunyauto.com</a>
+      </address></div>
+      <div>
+        <iframe id = "frame"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
+        frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+      </div>
       <div>
           <a href="https://github.com/JohnnyMatharu"><img src="./assets/images/25231.png">Johnny Matharu </a>
           <a href="https://github.com/liaof"><img src="./assets/images/25231.png">Fanxi Liao </a>
