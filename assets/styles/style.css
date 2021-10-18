@@ -17,7 +17,10 @@
  
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
 #logoSize 
   {
     float: left;
@@ -47,11 +50,15 @@
   /* padding-bottom: 15px; */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #logo
     {
       float: left;
       width: 100%; 
+padding-left: 12%;
     }
   }
   
@@ -65,6 +72,9 @@
     padding-right: 36px;
     color: orchid;
 }
+
+
+
 
 .menu1 
 { 
@@ -176,6 +186,33 @@ display: flex;
   
 }
 
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+  #search {
+    justify-content:center;
+    padding-left: 6%; 
+    padding-right: 4%;
+    color: orchid;
+}
+
+}
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+  #headingFirst {
+    justify-content:center;
+ 
+    padding-right: 12%;
+    color: orchid;
+}
+
+}
+
+
 
 #search2
 {
@@ -264,7 +301,10 @@ padding-left: 11.1%;
 width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #searchBox1
     {
       float: left;
@@ -279,7 +319,10 @@ width: 50%;
 width: 50%;
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #searchBox2
     {
       float: left;
@@ -341,6 +384,25 @@ width: 50%;
     justify-content: center;  
 }
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+    .heading-text
+      {
+        padding-left: 24.5%;
+        padding-right: 5.5%;
+         align-items: center; 
+           justify-content: center; 
+           color: orchid; 
+        
+      }
+    }
+
+
+
+
+
 
 #head1
 
@@ -351,11 +413,14 @@ width: 50%;
        justify-content: center; 
        color: orchid; 
    }
-   @media only screen and (max-width: 600px) {
+   @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
     #head1
       {
-        padding-left: 27%;
-        padding-right: 33%;
+        padding-left: 33%;
+        padding-right: 27%;
          align-items: center; 
            justify-content: center; 
            color: orchid; 
@@ -374,7 +439,11 @@ width: 50%;
      justify-content: center; 
      color: orchid; 
     }
-    @media only screen and (max-width: 600px) {
+  
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
       #head2
         {
           padding-left: 15%;
@@ -412,7 +481,10 @@ padding-right: 39%;
 width: 100%;
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen 
+ and (device-width : 375px) 
+ and (device-height : 812px) 
+ and (-webkit-device-pixel-ratio : 3) {
   #interest1
     {
       align-items: center;   
@@ -433,7 +505,10 @@ padding-left: 42.5%;
 padding-right: 40.5%;
 width: 100%;
  }
- @media only screen and (max-width: 600px) {
+ @media only screen 
+ and (device-width : 375px) 
+ and (device-height : 812px) 
+ and (-webkit-device-pixel-ratio : 3) {
   #interest2 
     {
       align-items: center;   
@@ -456,7 +531,10 @@ padding-right: 42.5%;
 width: 100%;
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #interest3
     {
       align-items: center;   
@@ -478,13 +556,16 @@ padding-right: 48.85%;
 width: 100%;
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #interest4
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 43.15%;
-      padding-right: 43.85%;
+      padding-left: 46.15%;
+      padding-right: 40.85%;
       width: 100%;
 
     }
@@ -535,7 +616,10 @@ width: 100%;
     padding-right: 39.02%;
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #payment1
     {
       align-items: center;   
@@ -558,7 +642,10 @@ width: 100%;
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #payment2
     {
       align-items: center;   
@@ -581,13 +668,16 @@ width: 100%;
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #payment3
     {
       align-items: center;   
     justify-content: center;  
-    padding-left: 43.92%;
-    padding-right: 36.02%;
+    padding-left: 45.92%;
+    padding-right: 34.02%;
     width: 100%;
 
     }
@@ -598,17 +688,20 @@ width: 100%;
 {
   align-items: center;   
     justify-content: center;  
-    padding-left: 42.02%;
-    padding-right: 39.82%;
+    padding-left: 45.02%;
+    padding-right: 34.82%;
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #payment4
     {
       align-items: center;   
     justify-content: center;  
-    padding-left: 42.02%;
-    padding-right: 39.82%;
+    padding-left: 43.52%;
+    padding-right: 38.32%;
     width: 100%;
 
     }
@@ -624,13 +717,16 @@ width: 100%;
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
   #payment5
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 41.65%;
-      padding-right: 37.25%;
+      padding-left: 32.15%;
+      padding-right: 22.85%;
       width: 100%;
 
     }
@@ -760,14 +856,18 @@ img {
 
 #frame{
   height: 60px; 
+
 }
 
 
-@media only screen and (max-width: 600px) {
-  #frameMap
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+  #frame
     {
-    padding-left: 1.6%;
-    padding-right: 8.4%;
+
+  padding-left: 12%;
       width: 100%; 
     }
   }
