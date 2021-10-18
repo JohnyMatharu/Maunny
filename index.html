@@ -53,11 +53,16 @@
     
 
     <div class = "row-inquiry">
+<!-- this is main flex box -->
+
+<div id ="searchBox1">
       <h1 class="heading-text" id ="Search">Vehicle Search Inquiry</h1>
     <!-- this part will have 2 divs 50%, one inquiryText and other inquiryPicture for picture section, change id and class names as needed  -->
-     <div class = " col s12 l6">
+  
+    <div class = " col s12 l6">
      <!-- this is left div beg -->
       <form class ="left-align" id="search">
+
         <label for="cars">Year:</label>
         <select id="year" class="">
           <option value="2006">2006</option>
@@ -78,6 +83,8 @@
           <option value="2021">2021</option>
           <option value="YYYY" selected>YYYY</option>
         </select>
+
+      
         <label for="cars">Make:</label>
         <select id="make" class="">
           <option value="gmc-sierra">GMC Sierra</option>
@@ -173,6 +180,7 @@
           <option value="jeep-wrangler">Jeep Wrangler</option>
           <option value="YYYY" selected>----</option>
         </select>
+      
 <!-- you can use getelementbyID and attach models when users click on make, as event listener, list can populate for that make for models-->
 <div id = "search2">
         <label for="cars">Mileage in km:</label>
@@ -195,12 +203,13 @@
       <br>
       <br>
     </div>
+  </div>
   <!-- this is end of left div -->
 
 
 <!-- <div class = "carInfo"> -->
 
-    <div class = "carPictures col s12 l6">
+    <div class = "carPictures col s12 l6" id = "searchBox2">
     <!-- this is right div of container div  -->
       <div class = "imageDisplay ">
         <img id = "carDisplay"/> 
@@ -369,7 +378,7 @@
         P: +1 (647) 989 8989, Ext: 501-509<br/>
         E: <a href="mailto:maunny@maunyauto.com">maunny@maunyauto.com</a>
       </address></div>
-      <div>
+      <div id ="frameMap">
         <iframe id = "frame"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
         frameborder="0" style="border:0" allowfullscreen>
