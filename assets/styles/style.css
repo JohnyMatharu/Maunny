@@ -17,9 +17,18 @@
  
 }
 
+
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
 #logoSize 
   {
@@ -51,8 +60,8 @@
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #logo
     {
@@ -187,8 +196,8 @@ display: flex;
 }
 
 @media only screen 
-and (device-width : 375px) 
-and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
 and (-webkit-device-pixel-ratio : 3) {
   #search {
     justify-content:center;
@@ -200,8 +209,8 @@ and (-webkit-device-pixel-ratio : 3) {
 }
 
 @media only screen 
-and (device-width : 375px) 
-and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
 and (-webkit-device-pixel-ratio : 3) {
   #headingFirst {
     justify-content:center;
@@ -302,8 +311,8 @@ width: 50%;
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #searchBox1
     {
@@ -320,8 +329,8 @@ width: 50%;
 
 }
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #searchBox2
     {
@@ -385,8 +394,8 @@ width: 50%;
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
     .heading-text
       {
@@ -414,8 +423,8 @@ width: 50%;
        color: orchid; 
    }
    @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+   and (device-width : 414px) 
+   and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
     #head1
       {
@@ -441,8 +450,7 @@ width: 50%;
     }
   
     @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+    
     and (-webkit-device-pixel-ratio : 3) {
       #head2
         {
@@ -482,8 +490,8 @@ width: 100%;
  }
 
  @media only screen 
- and (device-width : 375px) 
- and (device-height : 812px) 
+ and (device-width : 414px) 
+   and (device-height : 736px) 
  and (-webkit-device-pixel-ratio : 3) {
   #interest1
     {
@@ -506,8 +514,8 @@ padding-right: 40.5%;
 width: 100%;
  }
  @media only screen 
- and (device-width : 375px) 
- and (device-height : 812px) 
+ and (device-width : 414px) 
+   and (device-height : 736px) 
  and (-webkit-device-pixel-ratio : 3) {
   #interest2 
     {
@@ -532,8 +540,8 @@ width: 100%;
  }
 
  @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+ and (device-width : 414px) 
+ and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #interest3
     {
@@ -557,8 +565,8 @@ width: 100%;
  }
 
  @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+ and (device-width : 414px) 
+ and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #interest4
     {
@@ -617,8 +625,8 @@ width: 100%;
     width: 100%;
 }
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px)  
     and (-webkit-device-pixel-ratio : 3) {
   #payment1
     {
@@ -643,8 +651,8 @@ width: 100%;
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #payment2
     {
@@ -669,8 +677,8 @@ width: 100%;
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #payment3
     {
@@ -693,8 +701,8 @@ width: 100%;
     width: 100%;
 }
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px)  
     and (-webkit-device-pixel-ratio : 3) {
   #payment4
     {
@@ -718,8 +726,8 @@ width: 100%;
 }
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #payment5
     {
@@ -861,8 +869,8 @@ img {
 
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+and (device-width : 414px) 
+and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) {
   #frame
     {
