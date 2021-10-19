@@ -1,3 +1,8 @@
+/* media queries are designed according to i/6/7/8/, for iphone x it shows same size on the actual cell phone
+as these ones mentioned, they are all designed here to shrink after 850 px mark as a standard, more sizes can
+be added if needed */
+
+
 * {
     box-sizing: border-box;
     padding: auto;
@@ -67,6 +72,7 @@
     padding-left: 42px; 
     padding-right: 36px;
     color: orchid;
+    
 }
 
 
@@ -220,6 +226,16 @@ display: flex;
   padding-right: 118.25px;
 }
 
+@media only screen and (max-width: 850px) {
+  #search3
+    {
+      align-content: center;
+      padding-left: 115px;
+      padding-right: 129px;
+    }
+  }
+
+
 .vehicleSearch 
 {
   height: 758px;
@@ -372,11 +388,12 @@ width: 50%;
 @media only screen and (max-width: 850px){
     .heading-text
       {
-        padding-left: 24.5%;
-        padding-right: 5.5%;
+        padding-left: 24%;
+        padding-right: 6%;
          align-items: center; 
            justify-content: center; 
            color: orchid; 
+           font-size: larger;
         
       }
     }
@@ -398,12 +415,12 @@ width: 50%;
    @media only screen and (max-width: 850px){
     #head1
       {
-        padding-left: 33%;
-        padding-right: 27%;
+        padding-left: 25%;
+        padding-right: 11%;
          align-items: center; 
            justify-content: center; 
            color: orchid; 
-        
+        font-size: large;
       }
     }
  
@@ -421,11 +438,12 @@ width: 50%;
     @media only screen and (max-width: 850px) {
       #head2
         {
-          padding-left: 15%;
-          padding-right: 30;
+          padding-left: 14%;
+          padding-right: 1%;
           align-items: center; 
           justify-content: center; 
           color: orchid; 
+          font-size: medium;
           
         }
       }
@@ -461,8 +479,8 @@ width: 100%;
     {
       align-items: center;   
 justify-content: center;  
-padding-left: 35%;
-padding-right: 40%;
+padding-left: 34%;
+padding-right: 41%;
 width: 100%;
        
     }
@@ -482,8 +500,8 @@ width: 100%;
     {
       align-items: center;   
 justify-content: center;  
-padding-left: 35%;
-padding-right: 40%;
+padding-left: 34%;
+padding-right: 41%;
 width: 100%;
        
     }
@@ -505,8 +523,8 @@ width: 100%;
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 35%;
-      padding-right: 40%;
+      padding-left: 34%;
+padding-right: 41%;
       width: 100%;
 
     }
@@ -527,7 +545,7 @@ width: 100%;
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 46.15%;
+      padding-left: 44.15%;
       padding-right: 40.85%;
       width: 100%;
 
@@ -584,8 +602,8 @@ width: 100%;
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 35%;
-      padding-right: 40%;
+      padding-left: 34%;
+      padding-right: 41%;
       width: 100%;
 
     }
@@ -607,8 +625,8 @@ width: 100%;
     {
       align-items: center;   
       justify-content: center;  
-      padding-left: 35%;
-      padding-right: 40%;
+      padding-left: 34%;
+padding-right: 41%;
       width: 100%;
 
     }
@@ -630,8 +648,8 @@ width: 100%;
     {
       align-items: center;   
     justify-content: center;  
-    padding-left: 45.92%;
-    padding-right: 34.02%;
+    padding-left: 30%;
+    padding-right: 21%;
     width: 100%;
 
     }
@@ -651,8 +669,8 @@ width: 100%;
     {
       align-items: center;   
     justify-content: center;  
-    padding-left: 43.52%;
-    padding-right: 38.32%;
+    padding-left: 23%;
+    padding-right: 16%;
     width: 100%;
 
     }
@@ -811,7 +829,7 @@ img {
   #frame
     {
 
-  padding-left: 12%;
+  padding-left: 6%;
       width: 100%; 
     }
   }
