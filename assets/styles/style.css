@@ -1,6 +1,6 @@
-/* media queries are designed according to i/6/7/8/, for iphone x it shows same size on the actual cell phone
+/* media queries are designed according to i/6/7/8/, for iphone x and i/6/7/8/ plus it shows similar size on the actual cell phone
 as these ones mentioned, they are all designed here to shrink after 850 px mark as a standard, more sizes can
-be added if needed */
+be added if needed including landscape view, everything should be designed according to i/6/7/8/ but in media query standard is 850 px */
 
 
 * {
