@@ -660,8 +660,8 @@ padding-right: 39%;
 {
   align-items: center;   
     justify-content: center;  
-    padding-left: 45.02%;
-    padding-right: 34.82%;
+    padding-left: 41.60%;
+    padding-right: 37.82%;
     width: 100%;
 }
 @media only screen and (max-width: 850px){
@@ -890,3 +890,15 @@ footer img {
   height: 15px;
   width: 15px;
 }
+#pad{
+  padding-left: 0.3px;
+  padding-right: 0.5px;
+}
+@media only screen and (max-width: 850px){
+  #pad
+    {
+
+  padding-left: 9.3%;
+     
+    }
+  }
