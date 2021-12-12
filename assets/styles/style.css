@@ -48,7 +48,7 @@ be added if needed including landscape view, everything should be designed accor
   /* width: 12%; */
    /* padding-top: 6px;  */
    padding-bottom: 6px; 
- padding-left: 2px;
+ padding-left: 12px;
   align-content: center; 
   
   /* padding-bottom: 15px; */
@@ -68,7 +68,7 @@ be added if needed including landscape view, everything should be designed accor
 
 /* old code starts */
 .heading-text {
-    justify-content:center;
+    justify-content: center;
     padding-left: 42px; 
     padding-right: 36px;
     color: orchid;
@@ -822,7 +822,7 @@ img {
 
 #frame{
   height: 60px; 
-
+  padding-left: 3%;
 }
 
 @media only screen and (max-width: 850px){
