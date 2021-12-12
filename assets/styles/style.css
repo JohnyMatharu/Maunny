@@ -828,9 +828,9 @@ img {
 @media only screen and (max-width: 850px){
   #frame
     {
-
-  padding-left: 6%;
-      width: 100%; 
+display: none;
+  /* padding-left: 6%; */
+      /* width: 100%;  */
     }
   }
 
